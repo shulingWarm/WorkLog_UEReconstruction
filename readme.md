@@ -6,4 +6,4 @@
 # 工作过程
 - 【DONE】子任务1 重建结果静态放置
 - 【DONE】子任务2 调用重建的界面
-- 【DOING】过滤重建结果中无效的3D gaussian
+- 【DOING】子任务3 过滤重建结果中无效的3D gaussian
