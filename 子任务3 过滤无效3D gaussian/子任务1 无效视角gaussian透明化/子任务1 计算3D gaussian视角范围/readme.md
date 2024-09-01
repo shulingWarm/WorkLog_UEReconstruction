@@ -5,4 +5,4 @@
 # 工作记录
 - 【DONE】 在OpenSplat中添加一个library，在library中声明一个GPU kernel
 	- 目的: 后面会在这个kernel里面实现计算gaussian视角范围相关的逻辑
-- 【DOING】 实现kernel的具体计算逻辑
+- 【DOING】 子任务1 实现kernel的具体计算逻辑
