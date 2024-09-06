@@ -4,6 +4,7 @@
 - 在UE中观察3D gaussian时，当从一个无效视角观察3D gaussian时，直接不显示它。
 
 # 工作记录
-- 【DOING】 子任务1: 计算每个3D gaussian的视角范围
+- 【DONE】 子任务1: 计算每个3D gaussian的视角范围
+- 【TO-DO】 在UE里面实现基于gaussian可见视角范围的渲染。
+	- 目的: 由于每个3D gaussian有它自己的渲染视角范围，需要对UE的粒子系统渲染有针对性的修改。
 - 【TO-DO】 在OpenSplat中，将3D gaussian的视角范围回传给UE
-- 【TO-DO】 修改UE里面对于3D gaussian的渲染逻辑，确保视角范围外的3D gaussian不做显示
