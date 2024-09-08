@@ -9,3 +9,4 @@
 	- Commit: https://github.com/shulingWarm/OpenSplat/commit/bf71c36bd969467f9aa5c27f5df3c5a0c7b5c204
 - 【TO-DO】 找到玩家视角在Actor坐标系下的坐标
 	- 目的: 由于3D gaussian的坐标系是粒子系统的actor下面的坐标系，因此需要另外计算actor下面的相机坐标。
+- 【DOING】 子任务1 在Direct X的HLSL中实现3D gaussian的渲染逻辑
