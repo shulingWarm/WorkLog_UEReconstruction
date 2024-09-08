@@ -9,3 +9,12 @@
 	- 【DONE】 实现gaussian view视角的核心CUDA核函数的角度计算部分
 	- 【TO-DO】 处理最终角度范围的有效区间选择
 		- 目的: 角度范围将360度划分为两半，需要特别处理哪一半才是有效区间
+
+# 2024/9/8
+- 【DOING】 在DirectX的HLSL中实现3D gaussian的渲染。
+	- 目的: 由于UE中的3D gaussian渲染是用HLSL实现的，但目前对于HLSL还不熟悉，因此做一个原生的HLSL项目来积累经验。
+- 【TO-DO】 过滤3D重建结果中的无效3D gaussian.
+	- 目的: 对于室内的重建结果场景，将结果放到游戏中并从“室外”观察它时，看到的3D gaussian是无意义的，很影响视觉观感，因此需要寻找方法将它去除。 
+	- 【DONE】 Gaussian视角范围的计算kernel
+		- Commit: https://github.com/shulingWarm/OpenSplat/commit/233098b8cfa3c787a2849a086891bd6ace76d1ef
+	- 【TO-DO】 修改UE中的渲染逻辑，适配每个gaussian的可见范围
