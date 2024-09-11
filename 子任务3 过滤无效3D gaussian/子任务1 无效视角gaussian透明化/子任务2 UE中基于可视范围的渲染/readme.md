@@ -10,4 +10,5 @@
 - 【DONE】 找到玩家视角在Actor坐标系下的坐标
 	- 目的: 由于3D gaussian的坐标系是粒子系统的actor下面的坐标系，因此需要另外计算actor下面的相机坐标。
 - 【DONE】 根据相机光心在Actor坐标系下的坐标，计算它到3D gaussian的角度。
-- 【DOING】 子任务1 将gaussian的角度范围导入到HLSL中
+- 【DONE】 子任务1 将gaussian的角度范围导入到HLSL中
+- 【DOING】 在HLSL中判断x,y的观察角度是否符合原定的角度范围
