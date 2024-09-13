@@ -1,0 +1,9 @@
+# 目标
+- 改写OpenSplat里面之前实现过的用于计算每个3D gaussian有效观察角度范围的kernel
+- 每个gaussian的观察角度由float表示的角度大小范围改为用bit表示的角度选中范围
+
+# 工作过程
+- 【DONE】 用角度recorder的形式实现对每个角度值的记录。
+	- Commit: https://github.com/shulingWarm/OpenSplat/commit/a8fb2e395f200670b45ee16ab48bb3c1d471a2d9
+- 【DOING】 根据角度recorder的操作实现角度的归约操作
+- 【TO-DO】 根据角度的bit移位形式，将它最终转换为float的角度大小范围的形式
