@@ -18,3 +18,14 @@
 	- 【DONE】 Gaussian视角范围的计算kernel
 		- Commit: https://github.com/shulingWarm/OpenSplat/commit/233098b8cfa3c787a2849a086891bd6ace76d1ef
 	- 【TO-DO】 修改UE中的渲染逻辑，适配每个gaussian的可见范围
+
+# 2024/9/15
+- 【GIVE-UP】 在DirectX的HLSL中实现3D gaussian的渲染。
+	- 原因: HLSL虽然是Windows推出的渲染代码，但文档和教程并不友善，而且语法和C类似，因此可以基于对C语法的认知直接进行UE中HLSL的开发。
+- 【DOING】 过滤3D重建结果中的无效3D gaussian.
+	- 【DONE】 Gaussian视角范围的计算kernel
+	- 【DONE】 修改UE中的渲染逻辑，适配每个gaussian的可见范围
+		- Commit: https://github.com/shulingWarm/UEReconstruction/commit/6f75b63238f03ea60eaf56ae4b51731032a5e0d9
+		- 结果: 在HLSL中实现了对观察视角的计算以及判断它是否在合法的观察范围内
+	- 【DOING】 基于视角范围的渲染效果调试。
+		- 目的: 目前基于视角范围的渲染仅仅是完成了代码工作，还未进行测试。
