@@ -5,4 +5,11 @@
 # 工作过程
 - 【DONE】 测试UE中的渲染效果
 	- 结果: 基于视角范围的渲染完全没有效果，与实现该功能之前的渲染效果完全一致。
+- 【DONE】 修复OpenSplat中移位操作溢出的问题。
+	- 背景: 代码中的(1<<idBit)需要改成(1LLU<<idBit)，不然计算的时候会溢出
+	- Commit: https://github.com/shulingWarm/OpenSplat/commit/b75b177e9d09e3527a43e9c13c08bd86c6162855
 - 【DOING】 寻找UE视觉范围渲染没有效果的原因
+	- 状态:
+		- 打印了OpenSplat计算的角度范围的结果，数值上是符合预期的
+		- 将HLSL中的角度范围写成固定值，渲染效果仍然是不符合预期的。
+		- 很有可能是HLSL中的坐标系搞错了，导致算出来的角度范围是错的。
