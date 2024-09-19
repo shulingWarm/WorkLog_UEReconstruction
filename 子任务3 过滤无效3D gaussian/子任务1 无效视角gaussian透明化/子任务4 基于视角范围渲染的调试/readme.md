@@ -10,7 +10,6 @@
 	- Commit: https://github.com/shulingWarm/OpenSplat/commit/b75b177e9d09e3527a43e9c13c08bd86c6162855
 - 【DOING】 寻找UE视觉范围渲染没有效果的原因
 	- 状态:
-		- 最关键的原因之一是SampleTexture的时候没有传入正确的UV
-			- 这导致每个gaussian的角度范围被传到HLSL里面的都是零
-		- 传入正确的texture采样后，每个gaussian都拥有了各自的合法观察范围
-		- 整体的渲染效果仍然不满足预期，gaussian拖尾虽然从背面看不到了，但还是可以从侧面看到
+		- 将光心数据保存出来后发现，光心位置完全不符合预期，光心已经分布在场景外围了。
+		- 不应该使用调用Splatting计算之前的光心坐标数据，很可能Splat的过程中会对光心做调整
+		- 应该将OpenSplat中维护的tensor里面的光心数据取出作为后续计算有效视角范围的输入。
