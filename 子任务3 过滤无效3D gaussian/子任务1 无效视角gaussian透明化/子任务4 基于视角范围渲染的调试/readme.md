@@ -10,7 +10,7 @@
 	- Commit: https://github.com/shulingWarm/OpenSplat/commit/b75b177e9d09e3527a43e9c13c08bd86c6162855
 - 【DOING】 寻找UE视觉范围渲染没有效果的原因
 	- 状态:
-		- 验证发现HLSL的坐标系计算错误，目前已经将坐标系改成CameraOrigin - AcotrPosiion
-		- 改成正确的坐标系后，3D gaussian完全无法显示，全部被过滤掉了。
-		- 目前怀疑是viewRange的角度没有被正常传入到HLSL里面
-		- 下一步做一个实验：读取view range的时候把读取到的数据写死，看一下能不能得到正常的结果。
+		- 最关键的原因之一是SampleTexture的时候没有传入正确的UV
+			- 这导致每个gaussian的角度范围被传到HLSL里面的都是零
+		- 传入正确的texture采样后，每个gaussian都拥有了各自的合法观察范围
+		- 整体的渲染效果仍然不满足预期，gaussian拖尾虽然从背面看不到了，但还是可以从侧面看到
