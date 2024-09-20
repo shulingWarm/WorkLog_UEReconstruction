@@ -8,8 +8,11 @@
 - 【DONE】 修复OpenSplat中移位操作溢出的问题。
 	- 背景: 代码中的(1<<idBit)需要改成(1LLU<<idBit)，不然计算的时候会溢出
 	- Commit: https://github.com/shulingWarm/OpenSplat/commit/b75b177e9d09e3527a43e9c13c08bd86c6162855
-- 【DOING】 寻找UE视觉范围渲染没有效果的原因
-	- 状态:
-		- 将光心数据保存出来后发现，光心位置完全不符合预期，光心已经分布在场景外围了。
-		- 不应该使用调用Splatting计算之前的光心坐标数据，很可能Splat的过程中会对光心做调整
-		- 应该将OpenSplat中维护的tensor里面的光心数据取出作为后续计算有效视角范围的输入。
+- 【DONE】 寻找UE视觉范围渲染没有效果的原因
+	- 结论: 
+		- OpenSplat中导出的光心坐标是错误的，从计算结果中导致的光心坐标与gaussian的相对位置不符合预期。
+		- OpenSplat在约束优化的过程中很可能已经对光心做了变换，应该直接使用OpenSplat中的光心坐标
+- 【DOING】 导出OpenSplat里面的光心坐标，需要从它最终的InputData里面导出。
+	- 【DONE】 开发函数，用于从OpenSplat的外参信息中导出光心坐标并保存到float\* 中
+	- 【DOING】 在重建主流程中调用导出光心坐标的函数
+	- 【TO-DO】 将新的dump光心坐标结果保存到ply文件中，观察目前是否符合预期。
