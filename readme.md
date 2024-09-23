@@ -8,4 +8,4 @@
 - 【DONE】子任务2 调用重建的界面
 - 【DONE】子任务3 过滤重建结果中无效的3D gaussian
 	结果: https://www.bilibili.com/video/BV1bpskesE4R
-- 【TO-DO】 添加控制场景的缩放，旋转和位置的操作逻辑
+- 【DOING】 子任务4 3D gaussian的放置交互
