@@ -10,9 +10,11 @@
 	- Commit: https://github.com/shulingWarm/UEReconstruction/commit/107c1b722a9d173aca7e806aa99799b02f5032d3
 - 【DONE】 实现3D gaussian的另外两个旋转轴的操作
 	- 结果: 另外两个旋转轴的实现与Z轴是一样的，现在可以用按键控制三个方向的旋转。
-- 【DOING】 实现由玩家控制3D gaussian场景的缩放。
-	- 状态:
-		- 目前已经发现3D gaussian是可以自适应actor的缩放的。
-		- 下一步只需要添加按钮来执行这个操作就可以了。
-		- 实现这个效果仅仅就是为了方便我以后做调试，最终的成品效果肯定不能用按键这么简单。
-- 【TO-DO】 实现3D gaussian被玩家拿起再放下的逻辑。
+- 【DONE】 实现由玩家控制3D gaussian场景的缩放。
+	- 状态: 添加了一些按键用于控制3D gaussian结果的缩放。
+	- 视频: https://www.bilibili.com/video/BV16asfepEaq
+
+# 结果
+- 目前已经支持用按键交互让3D gaussian的重建结果旋转或者缩放。
+- 视频效果: https://www.bilibili.com/video/BV16asfepEaq
+- 关于将3D gaussian拿起再放下，基本是一个UI系统的逻辑，现在先不急着做这个。
