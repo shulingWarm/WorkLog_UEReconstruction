@@ -8,4 +8,6 @@
 - 【DONE】子任务2 调用重建的界面
 - 【DONE】子任务3 过滤重建结果中无效的3D gaussian
 	结果: https://www.bilibili.com/video/BV1bpskesE4R
-- 【DOING】 子任务4 3D gaussian的放置交互
+- 【DONE】 子任务4 3D gaussian的放置交互
+	- 视频: https://www.bilibili.com/video/BV16asfepEaq
+- [DOING] 子任务5 3D gaussian效果优化
