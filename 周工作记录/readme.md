@@ -36,3 +36,10 @@
 	- 视频演示: https://www.bilibili.com/video/BV1bpskesE4R
 - 【TO-DO】 实现控制3D gaussian旋转、缩放和平移相关的逻辑
 	- 背景: 目前的重建结果在场景中放置的位置是没有规律的，所以需要允许玩家摆放自己的重建结果。
+
+# 2024/9/29
+- [DONE] 实现控制3D gaussian旋转、缩放和平移相关的逻辑
+	- 背景: 目前的重建结果在场景中放置的位置是没有规律的，所以需要允许玩家摆放自己的重建结果。
+	- 视频演示: https://www.bilibili.com/video/BV16asfepEaq
+- [DOING] 测试GaussianCube提升重建质量的效果
+	- 背景: 目前的3D Gaussian重建效果差差得太多，需要跟进一下新的算法来提升一下重建质量。
