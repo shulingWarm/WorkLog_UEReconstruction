@@ -4,4 +4,5 @@
 
 # 工作记录
 - [DONE] 子任务1 配置GaussianCube的环境
+- [DOING] 子任务2 准备用于测试GaussianCube的测试数据
 - [TO-DO] 测试GaussianCube的效果
