@@ -4,5 +4,5 @@
 
 # 工作记录
 - [DONE] 子任务1 配置GaussianCube的环境
-- [DOING] 子任务2 准备用于测试GaussianCube的测试数据
-- [TO-DO] 测试GaussianCube的效果
+- [GIVE-UP] 子任务2 准备用于测试GaussianCube的测试数据
+	- 放弃原因: GaussianCube的论文与github中的代码难以对应，不宜继续在这上面浪费时间。

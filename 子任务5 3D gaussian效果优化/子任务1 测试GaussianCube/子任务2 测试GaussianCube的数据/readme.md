@@ -13,7 +13,8 @@
 		- 虽然这样测试不能算是自己的测试数据，但至少可以先把程序跑通。
 		- 后续会再重新构建自己的测试数据。
 	- 放弃原因: GaussianCube的github readmd存在严重的误导性，还是需要靠自己的判断来确定这个程序应该怎样使用。
-- [DOING] 准备constrained fitting的测试数据
+- [GIVE-UP] 准备constrained fitting的测试数据
 	- 背景: 
 		- 根据GaussianCube的论文，它一共分为4个部分，其中第一部分是Constrained fitting
 		- Constrained fitting是将原本的3D gaussian整理成固定Gaussian个数的3D Gaussian.
+	- 放弃原因: GaussianCube的论文与github中的代码难以对应，不宜在这方面继续浪费时间。
