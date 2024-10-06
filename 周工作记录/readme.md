@@ -43,3 +43,11 @@
 	- 视频演示: https://www.bilibili.com/video/BV16asfepEaq
 - [DOING] 测试GaussianCube提升重建质量的效果
 	- 背景: 目前的3D Gaussian重建效果差差得太多，需要跟进一下新的算法来提升一下重建质量。
+
+# 2024/10/6
+- [GIVE-UP] 测试GaussianCube提升重建质量的效果
+	- 放弃原因: GaussianCube的github引导与论文中的描述难以对应，后续如果发现其他的3D Gaussian优化方案都是这样的话再来仔细研究它的文档。
+- [DOING] 测试GaussianObject提升重建结果质量的效果。
+	- 背景: GaussianObject可以用4张图片来生成重建结果。
+	- [DONE] 完成GaussianObject的环境配置。
+	- [DOING] 准备测试GaussianObject所需的输入数据。
