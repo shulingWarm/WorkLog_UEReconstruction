@@ -5,5 +5,7 @@
 
 # 工作过程
 - [DONE] 运行train_gs.py
-	- 结果: 可以没有报错地运行，但得到的并不是直接的3D Gaussian场景
-- [TO-DO] 运行render脚本。
+	- 结果: 可以没有报错地运行，可以初步得到3D Gaussian场景。
+
+# 结果
+- 可以直接按照github里面的命令运行得到粗糙的3D Gaussian.
