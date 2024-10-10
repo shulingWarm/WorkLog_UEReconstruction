@@ -9,4 +9,12 @@
 		- 运行过程中没有报错
 		- 得到的3D Gaussian场景仍然很粗糙，需要进一步渲染。
 		- ![Result](img1.png)
-- [TO-DO] 运行repair_stage2
+- [DONE] 运行repair_stage2
+	- 结果: 
+		- 运行过程中没有报错。
+		- 渲染效果仍然较差。
+		- [Result](img2.png)
+- [TO-DO] 安装minlora
+	- 背景: 测试train_lora时发现minlora是必须安装的选项，需要手动安装这个python库。 
+- [TO-DO] 测试train_lora
+	- 背景: 按照github里面提供的思路，这是运行leave_one_out之后的下一步。 
