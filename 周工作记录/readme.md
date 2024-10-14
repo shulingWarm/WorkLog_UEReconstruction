@@ -51,3 +51,11 @@
 	- 背景: GaussianObject可以用4张图片来生成重建结果。
 	- [DONE] 完成GaussianObject的环境配置。
 	- [DOING] 准备测试GaussianObject所需的输入数据。
+
+# 2024/10/13
+- [GIVE-UP] 测试GaussianObject提升重建结果质量的效果。
+	- 放弃原因: 运行到train_lora时，显存不足，无法继续测试。
+- [DOING] 借助服务器降低train_lora的内存消耗
+	- 目的: 借助服务器，先把train_lora跑起来，找到内存消耗点，想办法实现内存动态offload到cpu上
+- [DOING] 采用带先验位姿的数据集，生成高质量的重建结果。
+	- 目的: 为了做出来的视频有一定的观赏效果，需要自己先拿出来质量足够的重建结果，后续再考虑如何降低使用门槛。
