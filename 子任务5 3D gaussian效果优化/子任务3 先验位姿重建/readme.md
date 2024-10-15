@@ -3,3 +3,5 @@
 
 # 工作记录
 - [DOING] 寻找colmap里面指定先验pose的接口
+	- 状态:
+		- 目前已经定位到的函数: ReadDatabaseCameraLocations 位于 model.cc
