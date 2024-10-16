@@ -2,6 +2,7 @@
 - 进行带先验位姿的重建，获得高质量的重建结果后，用来做后续效果，碰撞检测、三维物体分割等。
 
 # 工作记录
-- [DOING] 寻找colmap里面指定先验pose的接口
-	- 状态:
-		- 目前已经定位到的函数: ReadDatabaseCameraLocations 位于 model.cc
+- [SUSPEND] 寻找colmap里面指定先验pose的接口
+	- 放弃原因: 查找后发现colmap并没有直接支持输入gps prior的接口，还需要借助外部工具
+- [TO-DO] 在OpenMVG里面测试prior位姿的重建效果。
+	- 目标: 直接拿带位姿信息的数据集去测试重建效果，稀疏重建后调用OpenSplat来做3D Gaussian渲染。
