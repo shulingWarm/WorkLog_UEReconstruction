@@ -9,5 +9,7 @@
 - [DOING] 子任务2 测试GaussianObject的效果
 	- 背景: GaussianObject是华为的工作，使用4张输入图像来生成3D Gaussian.
 	- 放弃原因: 目前仅有8G显存的显卡，无法复现这个论文。
-- [DOING] 子任务3 采用带有先验位姿的数据，获得一组质量较好的重建结果。
+- [DONE] 子任务3 采用带有先验位姿的数据，获得一组质量较好的重建结果。
 	- 背景: 一方面研究已有的3D Gaussian模型怎样降低内在消耗，另一方面拿一个质量足够的模型去实现交互部分。
+	- 结果: 目前已经可以把3D Gaussian的colmap效果放到场景中来展示了。
+	- 视频演示: https://www.bilibili.com/video/BV191y8YfEVR

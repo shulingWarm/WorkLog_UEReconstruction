@@ -3,7 +3,12 @@
 - 成功降低显存消耗后，再回到目前的电脑上实验用少量图片生成重建结果。
 
 # 工作过程
-- [DOING] 在新的服务器上配置GaussianObject的环境
+- [DONE] 在新的服务器上配置GaussianObject的环境
 	- 状态:
 		- [DONE] 配置train_lora.py需要用到的库
-		- [TO-DO] 运行train_lora.py的前置脚本
+		- [DONE] 运行train_lora.py的前置脚本
+	- 结果:
+		- 目前已经可以在新服务器上正常测试train_lora.
+- [DOING] 寻找服务器上运行train_lora时，是在哪个时刻达到了7G的显存占用
+	- 目标: 只要找到了这个显存过载的场景，就可以确定在什么时刻执行offload操作。 
+- [TO-DO] 分析在达到7G之前都做过什么操作，寻找具体的offload内存的方案。
