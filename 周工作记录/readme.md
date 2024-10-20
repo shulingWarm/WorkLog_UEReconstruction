@@ -59,3 +59,13 @@
 	- 目的: 借助服务器，先把train_lora跑起来，找到内存消耗点，想办法实现内存动态offload到cpu上
 - [DOING] 采用带先验位姿的数据集，生成高质量的重建结果。
 	- 目的: 为了做出来的视频有一定的观赏效果，需要自己先拿出来质量足够的重建结果，后续再考虑如何降低使用门槛。
+
+# 2024/10/20
+- [DONE] 采用带先验位姿的数据集，用传统方法生成3D Gaussian场景。
+	- 视频演示: https://www.bilibili.com/video/BV191y8YfEVR
+- [DOING] 借助服务器研究怎样降低train_lora的内存消耗。
+	- Stage:
+		- [DONE] 在服务器上配置train_lora.py所需的环境。
+		- [DONE] 在服务器上测试train_lora，发现在服务器上需要占用14G显存。
+		- [DOING] 研究降低train_lora内存的方法。
+- [DOING] 给3D Gaussian添加碰撞检测
