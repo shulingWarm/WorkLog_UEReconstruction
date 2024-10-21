@@ -4,4 +4,9 @@
 - 可以正常使用mesh之后，就可以进一步设计怎样给3D Gaussian动态应用碰撞mesh了。
 
 # 工作记录
-- [DOING] 向3D Gaussian里面添加静态Mesh
+- [DONE] 向3D Gaussian里面添加静态Mesh
+
+# 结果
+- 静态空气墙只需要导入静态的mesh
+- 将静态的mesh的材质设置为透明即可
+- 静态的mesh通常需要外部导入，可能是通过blender之类的东西制作的。
