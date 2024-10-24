@@ -6,5 +6,6 @@
 - [DOING] 尝试使用UDynamicMeshComponent生成动态mesh
 	- 背景: UDynamicMeshComponent是UE里面自带的一个组件功能，用它或许可以直接动态生成Mesh
 	- Status:
-		- [DOING] 在蓝图里面构造一个新的DynamicMeshComponent的实例。
-		- [TO-DO] 观察UDynamicMeshComponent提供的蓝图接口，随便调用其中一个函数观察效果。
+		- [DONE] 在蓝图里面构造一个新的DynamicMeshComponent的实例。
+			- 结果: 目前暂且认为，DynamicMeshComponent会在蓝图里面自动创建。
+		- [DOING] 子任务1 调用DynamicMeshComponent里面的SetDynamicMesh
