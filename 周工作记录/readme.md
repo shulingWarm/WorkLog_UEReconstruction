@@ -69,3 +69,13 @@
 		- [DONE] 在服务器上测试train_lora，发现在服务器上需要占用14G显存。
 		- [DOING] 研究降低train_lora内存的方法。
 - [DOING] 给3D Gaussian添加碰撞检测
+
+# 2024/10/27
+- [DOING] 借助服务器研究怎样降低train_lora的内存消耗。
+	- Stage:
+		- [DOING] 尝试释放掉train_lora过程中的梯度内存，观察内存变化。
+		- [TO-DO] 研究降低train_lora内存的方法。
+- [DOING] 给3D Gaussian添加碰撞检测效果
+	- [DONE] 在UE运行时从外部导入Mesh
+	- [DONE] 验证从外部导入的Mesh可以正常产生碰撞效果。
+	- [TO-DO] 实现根据3D Gaussian生成碰撞Mesh的算法。
