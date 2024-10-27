@@ -10,5 +10,11 @@
 			- 结果: 目前暂且认为，DynamicMeshComponent会在蓝图里面自动创建。
 		- [DONE] 子任务1 调用DynamicMeshComponent里面的SetDynamicMesh
 	- 结果: 用UDynamicMesh生成的Mesh再添加到DynamicMeshComponent之后，可以正常显示出来Mesh.
-- [DOING] 给运行时动态生成的Mesh添加碰撞效果。
-- [TO-DO] 根据3D Gaussian的实际情况生成动态Mesh并且添加到Actor里面。
+- [DONE] 给运行时动态生成的Mesh添加碰撞效果。
+	- 结果: 使用SetComplexAsSimpleCollision即可。
+- [DONE] 拿一个实际的Mesh数据测试导入效果。
+	- 结果: 在运行时可以正常导入Mesh，导入的Mesh可以按照实际情况来判断碰撞。
+
+# 结果
+- 目前已经可以从外部数据运行时导入Mesh
+- 从外部导入的Mesh可以正常实现碰撞效果。
