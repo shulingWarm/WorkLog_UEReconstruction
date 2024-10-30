@@ -8,4 +8,4 @@
 		- [DONE] 定位到C++实现中用于获取tensor前导tensor的C++函数。
 		- [DONE] 研究用于获取tensor前导tensor的C++实现，观察底层数据结构。
 			- 结果: 它的底层数据是一个Edge,每个Edge两端是Node
-		- [DOING] 用torch的C++接口写一个backward过程，然后获取tensor的前导edge.
+		- [DOING] 子任务1 用torch的C++接口写一个backward过程，然后获取tensor的前导edge.

@@ -5,4 +5,7 @@
 # 工作记录
 - [DONE] 寻找SuGaR里面用于将3D Gaussian转换成Mesh的函数入口。 
 	- 结果: 这个入口位于SuGaR/sugar_extractors/coarse_mesh.py
-- [TO-DO] Import这个coarse_mesh里面的函数，确实相关的库齐备从而可以正常完成import阶段
+- [DONE] Import这个coarse_mesh里面的函数，确实相关的库齐备从而可以正常完成import阶段
+	- 结果: import过程不再报错，用到的python库都安装好了。
+- [DOING] 寻找Mesh输出对应的直接前导输入。
+	- 背景: 按说下一步该准备输入数据了，但这个Extract_mesh里面还包含一些对mesh的优化，可能并非所有的输入都需要给定。
