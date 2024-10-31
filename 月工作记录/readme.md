@@ -11,3 +11,13 @@
 - [DONE] 添加按键交互，允许玩家旋转、缩放3D Gaussian场景
 	- 视频演示: https://www.bilibili.com/video/BV16asfepEaq
 - [DOING] 使用GaussianCube优化重建结果质量
+
+# 10月
+- [DONE] 使用对colmap友好的数据集做重建并得到导入到虚幻引擎中。
+	- 视频演示: https://www.bilibili.com/video/BV191y8YfEVR
+- [DONE] 将外部Mesh导入到虚幻引擎中并实现碰撞效果。
+	- 背景: 为了后续实现3D Gaussian的碰撞效果，打算将Mesh导入到游戏中并透明化，从而作为3D Gaussian的碰撞边界。
+- [DOING] 解耦SuGaR中将3D Gaussian转换为Mesh的功能，用于将3D Gaussian转换成Mesh
+	- 背景: SuGaR相对来说比较受认可，并且其中包含将3D Gaussian转换成Mesh的模块。
+- [DOING] 优化GaussianObject中train_lora.py的内存峰值。
+	- 背景: GaussianObject是输入4张图片并得到3D Gaussian重建结果的算法，但训练过程中发现显存不够。这种显存不够的情况很可能会频繁遇到，因此打算以这个项目为例开发一种将torch里面的梯度内存offload到CPU上的方法，这确保各种算法至少是可以在PC上跑起来的。
