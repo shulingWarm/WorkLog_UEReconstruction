@@ -9,3 +9,6 @@
 	- 结果: import过程不再报错，用到的python库都安装好了。
 - [DOING] 寻找Mesh输出对应的直接前导输入。
 	- 背景: 按说下一步该准备输入数据了，但这个Extract_mesh里面还包含一些对mesh的优化，可能并非所有的输入都需要给定。
+	- Stage:
+		- [DONE] SuGar这个module里面有一个points_属性，它是最终输出模型的主要前导变量。
+		- [TO-DO] 确认points_对应的前导变量。
