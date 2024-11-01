@@ -11,4 +11,6 @@
 	- 背景: 按说下一步该准备输入数据了，但这个Extract_mesh里面还包含一些对mesh的优化，可能并非所有的输入都需要给定。
 	- Stage:
 		- [DONE] SuGar这个module里面有一个points_属性，它是最终输出模型的主要前导变量。
-		- [TO-DO] 确认points_对应的前导变量。
+		- [DONE] 确认points_对应的前导变量。
+	- 结果:
+		最终的Mesh来源就是Gaussian Splatting生成的标准结果，一个ply文件和一个包含图片的文件夹，另外有一个cameras.json。
