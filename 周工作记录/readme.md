@@ -79,3 +79,13 @@
 	- [DONE] 在UE运行时从外部导入Mesh
 	- [DONE] 验证从外部导入的Mesh可以正常产生碰撞效果。
 	- [TO-DO] 实现根据3D Gaussian生成碰撞Mesh的算法。
+
+# 2024/11/3
+- [DOING] 借助服务器研究怎样降低train_lora的内存消耗。
+	- Stage:
+		- [DOING] 通过源码编译pytorch添加打印信息，寻找获取一个Tensor的前导Tensor的方法。
+		- [TO-DO] 尝试释放掉train_lora过程中的梯度内存，观察内存变化。
+- [DOING] 从3D Gaussian结果中导出可用于进行碰撞判定的Mesh.
+	- [DONE] 测试SuGaR算法，成功将3D Gaussian转换为Mesh，但发现其中外围存在大量无用的3D Gaussian.
+	- [TO-DO] 通过实现三维点的观察角度约束，过滤掉外围无效的三维点。
+- [TO-DO] 将得到的Mesh添加到虚幻引擎中，用于给3D Gaussian模型附加碰撞效果。
