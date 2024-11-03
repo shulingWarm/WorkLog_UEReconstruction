@@ -14,10 +14,15 @@
 		- [DONE] 确认points_对应的前导变量。
 	- 结果:
 		最终的Mesh来源就是Gaussian Splatting生成的标准结果，一个ply文件和一个包含图片的文件夹，另外有一个cameras.json。
-- [DOING] 测试sugar生成Mesh.
+- [DONE] 测试sugar生成Mesh.
 	- [DONE] 解决rasterizer的返回值unpack数量太少的问题。
 		- 解决方法: 根据原始的rasterizer操作的实际返回值情况，多unpack几个。
 	- [DONE] 导出Mesh时，显存不够。
 		- 解决方法: 把surface_level选项由0.3改成0,这样会使用传统的光栅化方法，放弃SuGaR提供的优化算法。
-	- [DOING] 解决导出Mesh时前景和背景都是None
+	- [DONE] 解决导出Mesh时前景和背景都是None
 		- 背景: 根据报错信息的提示，似乎前景和背景不能全都是None
+		- 解决方法: 把surface_level改成0.6最终得到了正常的结果。
+
+# 结果
+- 目前已经可以用Sugar得到Mesh结果
+- 用SuGaR得到的mesh结果外围有很多干扰面片。
