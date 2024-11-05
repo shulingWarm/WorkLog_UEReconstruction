@@ -6,4 +6,7 @@
 - [DONE] 在colmap源码寻找每个三维点的有效观察视角
 	- 结果: 已经在colmap源码中找到reconstruction，和OpenMVG的SfM_Data的内容基本一致。
 - [DONE] 在Colmap里面写入point3D.bin的时候，同时写入一个ply形式的点云。
-- [TO-DO] 重新运行Colmap的重建数据，然后观察未稠密化的点云的效果。
+- [DONE] 重新运行Colmap的重建数据，然后观察未稠密化的点云的效果。
+	- 结果: 得到了colmap的ply格式的稀疏点云的结果，可以发现稀疏点云中就存在大量的在房子外围的点。
+- [TO-DO] 在colmap的点云数据中锁定这些外围点。
+- [TO-DO] 针对colmap中锁定到的外围点，观察它们的重投影误差以及投影角度差。
