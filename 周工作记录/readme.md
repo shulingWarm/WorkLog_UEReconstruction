@@ -89,3 +89,9 @@
 	- [DONE] 测试SuGaR算法，成功将3D Gaussian转换为Mesh，但发现其中外围存在大量无用的3D Gaussian.
 	- [TO-DO] 通过实现三维点的观察角度约束，过滤掉外围无效的三维点。
 - [TO-DO] 将得到的Mesh添加到虚幻引擎中，用于给3D Gaussian模型附加碰撞效果。
+
+# 2024/11/10
+- [DOING] 借助服务器研究怎样降低train_lora的内存消耗。
+- [DOING] 从3D Gaussian结果中导出可用于进行碰撞判定的Mesh.
+	- [DONE] 测试SuGaR算法，成功将3D Gaussian转换为Mesh，但发现其中外围存在大量无用的3D Gaussian.
+	- [DOING] 在colmap重建结束阶段，执行更严格的过滤操作，过滤掉与房子无关的外围点。
