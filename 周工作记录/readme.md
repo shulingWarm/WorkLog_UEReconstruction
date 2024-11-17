@@ -95,3 +95,10 @@
 - [DOING] 从3D Gaussian结果中导出可用于进行碰撞判定的Mesh.
 	- [DONE] 测试SuGaR算法，成功将3D Gaussian转换为Mesh，但发现其中外围存在大量无用的3D Gaussian.
 	- [DOING] 在colmap重建结束阶段，执行更严格的过滤操作，过滤掉与房子无关的外围点。
+
+# 2024/11/17
+- [DONE] 从3D Gaussian结果中导出可用于进行碰撞判定的Mesh.
+	- [DONE] 直接用角度约束过滤掉无用的外围点。
+	- [DONE] 直接调用colmap生成简单的Mesh
+	- [DONE] 解决了OpenSplat自带一个偏移量的问题，确保将Colmap生成的Mesh和3D Gaussian对齐。
+- [TO-DO] 将生成的Mesh透明化之后导入到虚幻引擎中，用于进行碰撞判定。
