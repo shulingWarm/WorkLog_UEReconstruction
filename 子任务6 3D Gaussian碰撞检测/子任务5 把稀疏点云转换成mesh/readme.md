@@ -12,8 +12,12 @@
 	- 结果:
 		- 得到的Mesh结果仍然有轻微的异常点，但这或许并不影响碰撞效果。
 		- ![Mesh效果](img1.png)
-- [DOING] 解决得到的Mesh和3D Gaussian不在同一个坐标系的问题。
+- [DONE] 解决得到的Mesh和3D Gaussian不在同一个坐标系的问题。
 	- 状态:
 		- [DONE] 发现3D Gaussian和Mesh坐标系不一样是因为OpenSplat在载入点云的时候对点云做了变换。
 		- [DONE] 验证了变换关系只有平移和缩放，平移是一个(1,3)大小的Tensor，scale是一个float数值。
-		- [DOING] 将变换矩阵记录下来直接应用在Mesh上，不再追究变换矩阵是怎样被计算出来的。
+		- [DONE] 将变换矩阵记录下来直接应用在Mesh上，不再追究变换矩阵是怎样被计算出来的。
+	- 结果: 目前得到的Mesh已经和3D Gaussian的结果在同一个坐标系下了。
+
+# 结果
+得到了和3D Gaussian坐标系一致的Mesh。

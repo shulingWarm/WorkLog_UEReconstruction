@@ -7,4 +7,5 @@
 - [DONE] 子任务2 在运行时添加动态mesh
 - [DONE] 子任务3 测试使用SuGaR生成3D Gaussian对应的Mesh
 - [DONE] 子任务4 用夹角约束的方式去除无用的3D Gaussian.
-- [DOING] 子任务5 把稀疏点云直接转换为Mesh。
+- [DONE] 子任务5 把稀疏点云直接转换为Mesh。
+- [TO-DO] 将用于碰撞判定的Mesh和3D Gaussian一同导入到虚幻引擎中。
