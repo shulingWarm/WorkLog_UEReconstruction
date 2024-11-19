@@ -8,8 +8,13 @@
 - [DONE] 子任务3 测试使用SuGaR生成3D Gaussian对应的Mesh
 - [DONE] 子任务4 用夹角约束的方式去除无用的3D Gaussian.
 - [DONE] 子任务5 把稀疏点云直接转换为Mesh。
-- [DOING] 将用于碰撞判定的Mesh和3D Gaussian一同导入到虚幻引擎中。
+- [DONE] 将用于碰撞判定的Mesh和3D Gaussian一同导入到虚幻引擎中。
 	- 状态:
 		- [DONE] 将UE里面读取mesh的方式改成读取ply文件。
-		- [DOING] 将UE里面读取的Mesh和3D Gaussian的坐标系对齐。
+		- [DONE] 将UE里面读取的Mesh和3D Gaussian的坐标系对齐。
 			- 背景: UE里面刚刚将3D Gaussian读取进来的时候，也会涉及到坐标变换。 
+	- 结果: 主要的变换就是点坐标乘了100倍，现在已经实现了坐标系对齐。
+
+# 结果
+- 目前在UE里面实现的3D Gaussian效果基本符合直觉。
+- 演示视频: https://www.bilibili.com/video/BV1eRScYfEDP
