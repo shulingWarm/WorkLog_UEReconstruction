@@ -12,4 +12,4 @@
 	- 视频: https://www.bilibili.com/video/BV16asfepEaq
 - [DOING] 子任务5 3D gaussian效果优化
 - [DONE] 子任务6 3D Gaussian的碰撞检测
-- [TO-DO] 3D Gaussian的光影交互。
+- [DOING] 子任务7 3D Gaussian的光影交互。
