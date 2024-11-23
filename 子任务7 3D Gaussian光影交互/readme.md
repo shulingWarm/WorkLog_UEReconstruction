@@ -10,4 +10,5 @@
 		- 从摄像机反射光线，遇到物体表面了根据物体表面的反射率、吸收率和透射率决定后续的光线。
 		- 对于漫反射表面，反射光线是随机方向，一般用多条反射光线来模拟这个过程。
 		- 对于实时渲染要求的场景，可以用物体表面的buffer来累积这个面片上的光照。
-- [DOING] 子任务1: 解构3D Gaussian光线追踪的论文: https://gaussiantracer.github.io/
+- [DONE] 子任务1: 解构3D Gaussian光线追踪的论文: https://gaussiantracer.github.io/
+- [DOING] 子任务2: 解构可以重新打光的三维高斯论文。
