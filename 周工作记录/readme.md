@@ -102,3 +102,10 @@
 	- [DONE] 直接调用colmap生成简单的Mesh
 	- [DONE] 解决了OpenSplat自带一个偏移量的问题，确保将Colmap生成的Mesh和3D Gaussian对齐。
 - [TO-DO] 将生成的Mesh透明化之后导入到虚幻引擎中，用于进行碰撞判定。
+
+# 2024/11/24
+- [DONE] 将生成的Mesh透明化之后导入到虚幻引擎中，用于进行碰撞判定。
+	- 视频演示: https://www.bilibili.com/video/BV1eRScYfEDP
+- [DONE] 调研适用于给三维高斯做光影交互的方法。
+	- 结果: 最终选定采用这篇论文中的方法: https://nju-3dv.github.io/projects/Relightable3DGaussian/
+- [DOING] 配置Relightable三维高斯工程所需的运行环境。
