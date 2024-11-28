@@ -3,8 +3,10 @@
 
 # 工作过程
 - [DONE] 研究RelightableGaussian加载数据的代码，发现允许读取colmap格式的工程。
-- [DOING] 测试用手机拍的场景是否满足相机模型要求。
+- [DONE] 测试用手机拍的场景是否满足相机模型要求。
 	- 背景: 目前使用的房子的场景使用的相机模型是SIMPLE_RADIAN，RelightableGaussian无法读取。
 	- 状态:
 		- [DONE] 重新对手机拍摄的场景用colmap做重建。
-		- [TO-DO] 测试用手机拍摄的colmap工程能不能被加载到RelightbaleGaussian里面。
+		- [DONE] 测试用手机拍摄的colmap工程能不能被加载到RelightbaleGaussian里面。
+	- 结果: 用手机重建的时候指定相机模型为PINHOLE,在Relightable里面就可以正常加载了。
+- [DOING] 用colmap工程完成后续的scene信息加载。
