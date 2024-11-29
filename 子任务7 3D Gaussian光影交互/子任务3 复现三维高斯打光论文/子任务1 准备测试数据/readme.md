@@ -10,3 +10,5 @@
 		- [DONE] 测试用手机拍摄的colmap工程能不能被加载到RelightbaleGaussian里面。
 	- 结果: 用手机重建的时候指定相机模型为PINHOLE,在Relightable里面就可以正常加载了。
 - [DOING] 用colmap工程完成后续的scene信息加载。
+	- [DONE] 发现colmap_project里面找不到train_cameras是发生发生在调用random.shuffle之后
+	- [TO-DO] 解决colmap_project里面没有train_cameras属性的问题。
