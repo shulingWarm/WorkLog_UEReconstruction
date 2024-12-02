@@ -11,4 +11,6 @@
 	- 结果: 用手机重建的时候指定相机模型为PINHOLE,在Relightable里面就可以正常加载了。
 - [DOING] 用colmap工程完成后续的scene信息加载。
 	- [DONE] 发现colmap_project里面找不到train_cameras是发生发生在调用random.shuffle之后
+	- [DONE] 发现在调用cameraList_from_camInfos这个函数之前，train_cameras一直都是可以访问的。
+	- [TO-DO] 测试自己能不能自行遍历这个list
 	- [TO-DO] 解决colmap_project里面没有train_cameras属性的问题。
