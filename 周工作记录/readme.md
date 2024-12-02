@@ -109,3 +109,10 @@
 - [DONE] 调研适用于给三维高斯做光影交互的方法。
 	- 结果: 最终选定采用这篇论文中的方法: https://nju-3dv.github.io/projects/Relightable3DGaussian/
 - [DOING] 配置Relightable三维高斯工程所需的运行环境。
+
+# 2024/12/1
+- [DONE] 配置Relightable三维高斯工程所需的运行环境。
+- [DONE] 准备Relightable三维高斯工程所需的输入数据。
+	- [DONE] 由于Relightable工程对于Colmap工程的相机模型有要求，重新选择相机模型进行了一次稀疏重建。
+- [DOING] 尝试在Relightable三维高斯工程中读取自己制作的Colmap输入数据。
+	- [DOING] 解决找不到train_cameras这个attribute的问题。 
