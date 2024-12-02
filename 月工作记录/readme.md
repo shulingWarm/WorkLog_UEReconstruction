@@ -21,3 +21,10 @@
 	- 背景: SuGaR相对来说比较受认可，并且其中包含将3D Gaussian转换成Mesh的模块。
 - [DOING] 优化GaussianObject中train_lora.py的内存峰值。
 	- 背景: GaussianObject是输入4张图片并得到3D Gaussian重建结果的算法，但训练过程中发现显存不够。这种显存不够的情况很可能会频繁遇到，因此打算以这个项目为例开发一种将torch里面的梯度内存offload到CPU上的方法，这确保各种算法至少是可以在PC上跑起来的。
+
+# 11月
+- [DONE] 实现三维高斯在虚幻引擎中的碰撞效果。
+	- 视频演示: https://www.bilibili.com/video/BV1eRScYfEDP
+- [DOING] 给三维高斯实现光影交互效果，让三维高斯的表面颜色随着环境光照的变化而变化。
+	- [DONE] 调研论文后选用Relightable3DGaussian作为参考
+	- [DOING] 根据Relightable3DGaussian提供的源码复现论文中的效果。
