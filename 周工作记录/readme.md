@@ -116,3 +116,8 @@
 	- [DONE] 由于Relightable工程对于Colmap工程的相机模型有要求，重新选择相机模型进行了一次稀疏重建。
 - [DOING] 尝试在Relightable三维高斯工程中读取自己制作的Colmap输入数据。
 	- [DOING] 解决找不到train_cameras这个attribute的问题。 
+
+# 2024/12/8
+- [DONE] 调用Relightable3DGaussian里面的train过程成功生成带法向量信息的三维高斯。
+- [DOING] 测试Relightable3DGaussian里面的重新打光的效果。
+- [TO-DO] 将Relightable3DGaussian给三维高斯重新打光的逻辑迁移到虚幻引擎中。
