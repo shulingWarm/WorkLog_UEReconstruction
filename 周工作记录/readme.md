@@ -121,3 +121,9 @@
 - [DONE] 调用Relightable3DGaussian里面的train过程成功生成带法向量信息的三维高斯。
 - [DOING] 测试Relightable3DGaussian里面的重新打光的效果。
 - [TO-DO] 将Relightable3DGaussian给三维高斯重新打光的逻辑迁移到虚幻引擎中。
+
+# 2024/12/15
+- [DOING] 测试Relightable3DGaussian里面的重新打光的效果。
+	- Stage:
+		- [DONE] 测试发现Relightable3DGaussian的输出结果为空图片。
+		- [DOING] Debug重新打光过程的核函数，寻找输出结果为空的原因。
