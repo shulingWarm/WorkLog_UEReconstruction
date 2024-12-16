@@ -12,3 +12,6 @@
 	- 把正确的w2c传入Relight程序里面后仍然不能得到有效的渲染结果。
 - [DOING] 在核函数里面打印渲染图片的变量，寻找out_color为空的原因
 	- 背景: 目前发现render过程在CUDA里面实现的，需要从核函数里面寻找out_color为空的原因。
+	- 状态:
+		- [DONE] 打印信息发现进入kernel之前的num_rendered是零，导致根本没有有效输入。
+		- [TO-DO] 寻找num_rendered是零的原因。
