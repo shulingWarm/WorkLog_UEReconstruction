@@ -14,4 +14,6 @@
 	- 背景: 目前发现render过程在CUDA里面实现的，需要从核函数里面寻找out_color为空的原因。
 	- 状态:
 		- [DONE] 打印信息发现进入kernel之前的num_rendered是零，导致根本没有有效输入。
-		- [TO-DO] 寻找num_rendered是零的原因。
+		- [DONE] 寻找num_rendered是零的原因。
+			- num_rendered的前导是由tile_touched是零决定的。
+		- [DOING] 研究preprocessCUDA的内容寻找tile_touched是零的原因。
