@@ -16,4 +16,6 @@
 		- [DONE] 打印信息发现进入kernel之前的num_rendered是零，导致根本没有有效输入。
 		- [DONE] 寻找num_rendered是零的原因。
 			- num_rendered的前导是由tile_touched是零决定的。
-		- [DOING] 研究preprocessCUDA的内容寻找tile_touched是零的原因。
+		- [DONE] 研究preprocessCUDA的内容寻找tile_touched是零的原因。
+			- 在preprocessCUDA里面，in_frustum这个判断位置就直接返回了。
+		- [DOING] 分析为什么preprocess过程中所有的点都不在视锥坐标系里面。
