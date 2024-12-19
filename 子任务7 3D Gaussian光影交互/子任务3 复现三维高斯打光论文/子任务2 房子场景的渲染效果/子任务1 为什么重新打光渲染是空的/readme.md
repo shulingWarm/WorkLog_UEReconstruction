@@ -18,4 +18,6 @@
 			- num_rendered的前导是由tile_touched是零决定的。
 		- [DONE] 研究preprocessCUDA的内容寻找tile_touched是零的原因。
 			- 在preprocessCUDA里面，in_frustum这个判断位置就直接返回了。
-		- [DOING] 分析为什么preprocess过程中所有的点都不在视锥坐标系里面。
+		- [DONE] 分析为什么preprocess过程中所有的点都不在视锥坐标系里面。
+			- 在preprocess里面所有的所有投影点都不在成像平面前面。
+		- [DOING] 研究为什么preprocess的核函数中，为什么所有投影点都投影在了相机后面。
