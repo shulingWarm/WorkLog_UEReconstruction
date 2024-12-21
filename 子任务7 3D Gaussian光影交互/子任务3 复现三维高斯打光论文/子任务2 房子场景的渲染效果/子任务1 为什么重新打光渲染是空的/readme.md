@@ -20,4 +20,5 @@
 			- 在preprocessCUDA里面，in_frustum这个判断位置就直接返回了。
 		- [DONE] 分析为什么preprocess过程中所有的点都不在视锥坐标系里面。
 			- 在preprocess里面所有的所有投影点都不在成像平面前面。
+		- [DONE] 目前发现投影矩阵的排列是[R^T;T^T]，并不是横向排列。
 		- [DOING] 研究为什么preprocess的核函数中，为什么所有投影点都投影在了相机后面。
