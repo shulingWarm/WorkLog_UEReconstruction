@@ -5,3 +5,6 @@
 # 工作记录
 - [DONE] 研究发现读取进来的env_map本质上是hdr格式的图片。
 - [DOING] 研究env_map如何影响渲染结果。
+	- 状态:
+		- [DONE] 研究发现env_map传入后形成一个tensor然后作为参数被传入到栅格化渲染函数中。
+		- [TO-DO] 研究env_map形成的tensor具体怎样在栅格化过程中被使用。
