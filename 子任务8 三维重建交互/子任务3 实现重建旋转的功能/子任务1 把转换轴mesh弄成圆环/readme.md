@@ -4,4 +4,6 @@
 # 工程过程
 - [DONE] 下载并配置maya工程。
 - [DONE] 在maya里面制作一个圆环mesh。
-- [DOING] 把maya里面的mesh导入到UE工程中。 
+- [DONE] 把maya里面的mesh导入到UE工程中。 
+	- 结果: 把maya里面的圆环弄得大一些就能看到了。
+- [TO-DO] 准备三种颜色的材质，方便弄出来三种颜色的圆环表示三个旋转轴。
