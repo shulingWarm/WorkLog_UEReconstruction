@@ -3,10 +3,14 @@
 
 # 工作过程
 - [DONE] 定义旋转工具的背包UI，并且可以在背包里面默认显示这个旋转工具的item。
-- [DOING] 实现背包里面的旋转工具的点击回调。
+- [DONE] 实现背包里面的旋转工具的点击回调。
 	- 状态:
 		- [DONE] 调查访问普通的Actor Componet以及Scene Component都不能往场景里面添加Mesh信息。
 		- [DONE] 调查发现需要使用Child Actor作为显示Mesh的组件添加进子Actor里面。
 		- [DONE] 使用Attach Actor，把旋转轴对应的Actor附加到Recon Actor上。
 		- [DONE] 把旋转轴Actor对应的Mesh设置成不可碰撞。
-		- [DOING] 子任务1 把旋转轴的Mesh弄成三个环形。
+		- [DONE] 子任务1 把旋转轴的Mesh弄成三个环形。
+		- [DONE] 点击重建按钮后进入鼠标操作模式。
+	- 结果: 点击重建按钮后可以显示出旋转轴，并且可以进入鼠标操作模式。
+- [TO-DO] 实现重建旋转轴的鼠标划过效果。
+- [TO-DO] 实现鼠标旋转轴的点击拖动效果。
