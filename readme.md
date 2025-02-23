@@ -13,4 +13,5 @@
 - [DOING] 子任务5 3D gaussian效果优化
 - [DONE] 子任务6 3D Gaussian的碰撞检测
 - [DONE] 子任务7 3D Gaussian的光影交互。
-- [DOING] 子任务8 在虚幻引擎里面调用三维重建的交互逻辑。
+- [DONE] 子任务8 在虚幻引擎里面调用三维重建的交互逻辑。
+- [DOING] 子任务9 复现成品场景
