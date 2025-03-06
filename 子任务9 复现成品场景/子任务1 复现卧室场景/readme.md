@@ -8,4 +8,6 @@
 		- [DONE] 链接DynamicMesh，向Mesh里面添加节点。
 		- [DONE] 由于mesh数据无法管理每个节点的id，所以需要封装一层来管理每个节点的id。
 		- [DONE] 添加接口，将相信的横截面连接。
-		- [TO-DO] 添加接口，将横截面封闭。
+		- [DONE] 添加接口，将横截面封闭。
+		- [TO-DO] 在蓝图里面添加DynamicMeshComponent用于承接动态生成的Mesh。
+		- [TO-DO] 在蓝图里面调用MakeTestMesh测试动态生成Mesh的效果。
