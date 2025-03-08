@@ -3,11 +3,17 @@
 
 # 工作记录
 - [DONE] 定义基本形状的横截面。
-- [DOING] 由基本形状的横截面生成简单的Mesh。
+- [DONE] 由基本形状的横截面生成简单的Mesh。
 	- 工作状态:
 		- [DONE] 链接DynamicMesh，向Mesh里面添加节点。
 		- [DONE] 由于mesh数据无法管理每个节点的id，所以需要封装一层来管理每个节点的id。
 		- [DONE] 添加接口，将相信的横截面连接。
 		- [DONE] 添加接口，将横截面封闭。
-		- [TO-DO] 在蓝图里面添加DynamicMeshComponent用于承接动态生成的Mesh。
-		- [TO-DO] 在蓝图里面调用MakeTestMesh测试动态生成Mesh的效果。
+		- [DONE] 在蓝图里面添加DynamicMeshComponent用于承接动态生成的Mesh。
+		- [DONE] 在蓝图里面调用MakeTestMesh测试动态生成Mesh的效果。
+	- 结果: 目前可以在运行时生成动态的Mesh，形状符合预期。
+- [DOING] 制作木纹材质的模板。
+	- 背景: 为了模拟卧室场景里面的桌子，需要给生成的桌板添加木纹材质。
+	- 工作过程:
+		- [DOING] 模仿成品场景里面的树木材质，制作桌子用到的木纹材质。
+- [TO-DO] 制作桌子的支撑杆，这需要用到非直线形状的延伸方向。
