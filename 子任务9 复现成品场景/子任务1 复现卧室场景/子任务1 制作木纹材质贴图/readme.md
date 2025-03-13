@@ -8,7 +8,9 @@
 - [DOING] 解决Material指定的图片在Mesh上只采样到了颜色而不能体现图片的问题。
 	- 工作状态:
 		- [DONE] 研究发现UDynamicMesh没有直接设置Material的接口。
-		- [DOING] 研究SetOverrideRenderMaterial的底层实现。
+		- [TO-DO] 源码编译UE5。
+		- [TO-DO] 研究SetOverrideRenderMaterial过程中涉及到的影响渲染的操作。
+		- [TO-DO] 找到渲染材质过程中，与Mesh UV相关的逻辑。
 - [TO-DO] 使用C++实现类似于PS里面的云彩效果。
 - [TO-DO] 使用C++实现PS里面添加杂色效果。
 - [TO-DO] 使用C++实现PS里面的动感模糊效果。
