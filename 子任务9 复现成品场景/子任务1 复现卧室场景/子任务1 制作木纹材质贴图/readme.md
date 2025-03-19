@@ -15,7 +15,7 @@
 		- [DONE] UniformBuffer执行渲染过程的位置是Function(UniformBuffer);。
 		- [DONE] 分析Function(UniformBuffer)的逻辑，发现UniformBuffer是一个树形结构，每一层根据Buffer的数据类型单独处理。
 		- [DONE] 分析EnumerateTextures传入的回调函数，更进一步查看对Texture的处理逻辑，核心可能在于给Pass添加了View。
-		- [TO-DO] 深入研究: Pass->Views.Add(View->Handle);
+		- [DOING] 子任务1 深入研究: Pass->Views.Add(View->Handle);
 - [TO-DO] 使用C++实现类似于PS里面的云彩效果。
 - [TO-DO] 使用C++实现PS里面添加杂色效果。
 - [TO-DO] 使用C++实现PS里面的动感模糊效果。
