@@ -4,4 +4,8 @@
 
 # 工作过程
 - [DONE] 找到Pass的类定义。
-- [TO-DO] 寻找View->Handle可能所属的子类。
+- [DONE] 调研发现Pass-Views不会直接调用到Texture的渲染过程。
+
+# 结果
+Pass->Views.Add与底层的渲染过程不直接相关。
+
