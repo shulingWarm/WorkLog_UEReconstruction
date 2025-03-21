@@ -16,7 +16,9 @@
 		- [DONE] 分析Function(UniformBuffer)的逻辑，发现UniformBuffer是一个树形结构，每一层根据Buffer的数据类型单独处理。
 		- [DONE] 分析EnumerateTextures传入的回调函数，更进一步查看对Texture的处理逻辑，核心可能在于给Pass添加了View。
 		- [DONE] 子任务1 深入研究: Pass->Views.Add(View->Handle);
-		- [DOING] 在UE的shader代码中寻找与Texture渲染UV相关的代码。
+		- [DONE] 在UE的shader代码中寻找与Texture渲染UV相关的代码。
+			- 在shader中找到了UV确实被使用了，但UV仅仅是一个纹理的采样坐标，关键要看采样坐标是怎样被传递进shader函数的。
+		- [TO-DO] 研究shader数据中UV参数的来源。
 - [TO-DO] 使用C++实现类似于PS里面的云彩效果。
 - [TO-DO] 使用C++实现PS里面添加杂色效果。
 - [TO-DO] 使用C++实现PS里面的动感模糊效果。
