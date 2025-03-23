@@ -19,7 +19,7 @@
 		- [DONE] 在UE的shader代码中寻找与Texture渲染UV相关的代码。
 			- 在shader中找到了UV确实被使用了，但UV仅仅是一个纹理的采样坐标，关键要看采样坐标是怎样被传递进shader函数的。
 		- [DONE] 研究发现FShader确实是由Shaders里面的代码构造得到的。
-		- [TO-DO] 寻找FShader对应的渲染函数被实际调用的地方。
+		- [TO-DO] 研究静态Mesh和动态Mesh设置材质时的区别，为什么动态Mesh设置材质之后纹理无法正常显示。
 - [TO-DO] 使用C++实现类似于PS里面的云彩效果。
 - [TO-DO] 使用C++实现PS里面添加杂色效果。
 - [TO-DO] 使用C++实现PS里面的动感模糊效果。
