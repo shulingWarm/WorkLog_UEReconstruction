@@ -21,7 +21,10 @@
 		- [DONE] 研究发现FShader确实是由Shaders里面的代码构造得到的。
 		- [DONE] 研究静态Mesh和动态Mesh设置材质时的区别，为什么动态Mesh设置材质之后纹理无法正常显示。
 			- 动态Mesh和静态Mesh设置材质的流程完全不同，甚至静态Mesh和动态Mesh都没有一个公共的父类。
-		- [TO-DO] 测试用AGeneratedDynamicMeshActor在运行时生成Mesh。
+		- [DONE] 测试用AGeneratedDynamicMeshActor在运行时生成Mesh。
+			- AGeneratedDynamicMeshActor 可以正常用于在运行时生成Mesh。
+		- [TO-DO] 测试使用AGeneratedDynamicMeshActor叠加自定义的代码来动态生成Mesh。
+		- [TO-DO] 给 AGeneratedDynamicMeshActor 生成的Mesh设置材质。
 - [TO-DO] 使用C++实现类似于PS里面的云彩效果。
 - [TO-DO] 使用C++实现PS里面添加杂色效果。
 - [TO-DO] 使用C++实现PS里面的动感模糊效果。
