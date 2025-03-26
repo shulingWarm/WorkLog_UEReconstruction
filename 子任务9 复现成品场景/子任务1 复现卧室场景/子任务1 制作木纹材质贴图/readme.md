@@ -23,8 +23,9 @@
 			- 动态Mesh和静态Mesh设置材质的流程完全不同，甚至静态Mesh和动态Mesh都没有一个公共的父类。
 		- [DONE] 测试用AGeneratedDynamicMeshActor在运行时生成Mesh。
 			- AGeneratedDynamicMeshActor 可以正常用于在运行时生成Mesh。
-		- [TO-DO] 测试使用AGeneratedDynamicMeshActor叠加自定义的代码来动态生成Mesh。
-		- [TO-DO] 给 AGeneratedDynamicMeshActor 生成的Mesh设置材质。
+		- [DONE] 测试使用AGeneratedDynamicMeshActor叠加自定义的代码来动态生成Mesh。
+			- 用 AGeneratedDynamicMeshActor 叠加自定义Mesh生成逻辑得到的Mesh无法正常显示材质。
+		- [DOING] 解耦 AGeneratedDynamicMeshActor 里面原生的AppendBox过程，直到暴露出修改Mesh内容的接口。
 - [TO-DO] 使用C++实现类似于PS里面的云彩效果。
 - [TO-DO] 使用C++实现PS里面添加杂色效果。
 - [TO-DO] 使用C++实现PS里面的动感模糊效果。
