@@ -3,4 +3,6 @@
 - 暴露出类中修改Mesh的地方，方便以后做扩展。
 
 # 工作过程
-- [DOING] 由于 FGeometryScriptPrimitiveOptions 无法正常构造，直接去除代码中用到 FGeometryScriptPrimitiveOptions 的地方。
+- [DONE] 由于 FGeometryScriptPrimitiveOptions 无法正常构造，直接去除代码中用到 FGeometryScriptPrimitiveOptions 的地方。
+- [DONE] 将最外层的数据结构解耦之后，动态生成Mesh的代码可以正常工作。
+- [DOING] 将解耦出来的生成Mesh的代码改成自己之前的横截面逻辑。
