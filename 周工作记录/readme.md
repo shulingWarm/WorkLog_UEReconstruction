@@ -71,3 +71,7 @@
 	- [TO-DO] 直接比较代码中动态Mesh和静态Mesh设置材质时的代码实现区别。
 - [TO-DO] 复现当前的卧室场景。
 	- [TO-DO] 实时生成木纹贴图。
+
+- [DOING] 解决纹理贴图附加到Mesh时只显示纯色的问题。
+	- [DONE] 通过使用GeneratedMeshActor这个插件解决了Mesh只显示纯色贴图的问题。
+	- [DOING] 暴露出GeneratedMeshActor控件中对Mesh形状的设置，把它弄成可自定义的component。
