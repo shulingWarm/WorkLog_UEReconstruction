@@ -11,4 +11,8 @@
 - [DONE] 将解耦出来的生成Mesh的代码改成自己之前的横截面逻辑。
 	- 状态:
 		- [DONE] 闭合横截面时，为每个点分配UV的id.
-- [DOING] 研究AppendBox里面调用Polygon的逻辑。
+- [DONE] 研究AppendBox里面调用Polygon的逻辑。
+	- 结果: PolyGon是用来标记每个三角面属于哪个Face的.
+
+# 结果
+- 将AppendBox里面设置图形的接口暴露后，可以进行后续的Mesh生成逻辑的实现了。
