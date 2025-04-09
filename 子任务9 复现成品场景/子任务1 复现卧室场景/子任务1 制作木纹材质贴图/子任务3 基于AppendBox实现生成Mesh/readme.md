@@ -9,8 +9,10 @@
 - [DONE] 研究AppendBox中的UV和Normal。
 	- 背景: 发现AppendBox的逻辑中，不只有三角形有UV和normal，每个节点也有UV和Normal。
 	- 结果: 每个节点的UV和normal需要描述它们所属的节点id，以及它们在进行贴图时的平面坐标。
-- [DOING] 基于新的UV和Normal的理解，重新实现横截面生成Mesh的逻辑。
+- [DONE] 基于新的UV和Normal的理解，重新实现横截面生成Mesh的逻辑。
 	- 状态:
 		- [DONE] 实现闭合横截面时的UV和Normal赋值逻辑。
-		- [TO-DO] 实现链接横截面时，每个侧面的法向量的计算。
-		- [TO-DO] 实现链接横截面的逻辑。
+		- [DONE] 实现链接横截面时，每个侧面的法向量的计算。
+		- [DONE] 实现链接横截面的逻辑。
+	- 结果: 完成了新UV和Normal赋值的实现，编译通过。
+- [TO-DO] 解决运行AppendBox时的空指针报错。
