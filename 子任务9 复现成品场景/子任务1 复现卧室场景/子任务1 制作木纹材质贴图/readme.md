@@ -5,7 +5,7 @@
 - [DONE] 为了验证木纹贴图的生成效果，先在UE里面添加一个允许运行时指定纹理的空材质。
 - [DONE] 在新建了动态Mesh之后，新建一个可配置纹理的材质，然后手动配置纹理。
 - [DONE] 在运行时新建Material并修改Material参数。
-- [DOING] 解决Material指定的图片在Mesh上只采样到了颜色而不能体现图片的问题。
+- [DONE] 解决Material指定的图片在Mesh上只采样到了颜色而不能体现图片的问题。
 	- 工作状态:
 		- [DONE] 研究发现UDynamicMesh没有直接设置Material的接口。
 		- [DONE] 找到了设置Override材质中涉及到的对材质属性的获取。
@@ -26,7 +26,9 @@
 		- [DONE] 测试使用AGeneratedDynamicMeshActor叠加自定义的代码来动态生成Mesh。
 			- 用 AGeneratedDynamicMeshActor 叠加自定义Mesh生成逻辑得到的Mesh无法正常显示材质。
 		- [DONE] 子任务2 解耦 AGeneratedDynamicMeshActor 里面原生的AppendBox过程，直到暴露出修改Mesh内容的接口。
-		- [DOING] 子任务3 基于AppendBox的实接口，重新实现基于横截面生成Mesh的逻辑。
+		- [DONE] 子任务3 基于AppendBox的实接口，重新实现基于横截面生成Mesh的逻辑。
+	- 结果: 目前可以基于AppendBox的接口生成能正常显示贴图的正方体。
+- [TO-DO] 把正方体显示的贴图改成动态指定的贴图。
 - [TO-DO] 使用C++实现类似于PS里面的云彩效果。
 - [TO-DO] 使用C++实现PS里面添加杂色效果。
 - [TO-DO] 使用C++实现PS里面的动感模糊效果。
