@@ -28,7 +28,8 @@
 		- [DONE] 子任务2 解耦 AGeneratedDynamicMeshActor 里面原生的AppendBox过程，直到暴露出修改Mesh内容的接口。
 		- [DONE] 子任务3 基于AppendBox的实接口，重新实现基于横截面生成Mesh的逻辑。
 	- 结果: 目前可以基于AppendBox的接口生成能正常显示贴图的正方体。
-- [TO-DO] 把正方体显示的贴图改成动态指定的贴图。
+- [DONE] 把正方体显示的贴图改成动态指定的贴图。
+- [DOING] 动态生成空白贴图。
 - [TO-DO] 使用C++实现类似于PS里面的云彩效果。
 - [TO-DO] 使用C++实现PS里面添加杂色效果。
 - [TO-DO] 使用C++实现PS里面的动感模糊效果。
