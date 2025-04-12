@@ -82,3 +82,9 @@
 	- [DONE] 暴露出GeneratedMeshActor控件中对Mesh形状的设置，把它弄成可自定义的component。
 	- [DONE] 使用解耦后的GeneratedMeshActor实现基于横截面的生成Mesh的逻辑。
 	- [DOING] 解决基于GeneratedMeshActor生成的mesh仍然无法正常显示贴图的问题。
+
+# 2025/4/13
+- [DONE] 解决纹理贴图附加到Mesh上只显示纯色的问题。
+	- [DONE] 基于GeneratedMeshActor实现了UV所属节点的管理。
+- [TO-DO] 实现运行时生成木纹贴图。
+	- [TO-DO] 实现类似于PS里面云彩生成的效果。
