@@ -21,7 +21,8 @@
 - [DOING] 制作圆桌矩形的Mesh生成逻辑。
 	- 工作过程:
 		- [DONE] 用DeepSeek实现了生成圆角矩形的横截面。
-		- [DOING] 解耦横截面Mesh生成里面涉及到的UV管理器。
-		- [TO-DO] 解耦用横截面生成Mesh的功能。
-		- [TO-DO] 在Generator里面调用生成横截面并执行生成Mesh的过程。
+		- [DONE] 解耦横截面Mesh生成里面涉及到的UV管理器。
+		- [DONE] 解耦用横截面生成Mesh的功能。
+		- [DONE] 在Generator里面调用生成横截面并执行生成Mesh的过程。
+		- [DOING] 处理解耦后的Generator生成Mesh时报的空指针错误。
 - [TO-DO] 制作桌子的支撑杆，这需要用到非直线形状的延伸方向。
