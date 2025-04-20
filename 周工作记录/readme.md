@@ -88,3 +88,12 @@
 	- [DONE] 基于GeneratedMeshActor实现了UV所属节点的管理。
 - [TO-DO] 实现运行时生成木纹贴图。
 	- [TO-DO] 实现类似于PS里面云彩生成的效果。
+
+# 2025/4/20
+- [DONE] 实现运行时生成木纹贴图。
+	- [DONE] 实现PS里面的云彩效果。
+	- [DONE] 实现添加杂色效果。
+	- [DONE] 实现动感模糊效果。
+- [DOING] 为了生成圆角桌板，生成圆角矩形的桌子。
+	- [DONE] 利用DeepSeek生成圆角矩形的横截面。
+	- [DOING] 解耦基于横截面生成Mesh的class。
