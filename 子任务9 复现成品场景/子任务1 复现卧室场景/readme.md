@@ -25,5 +25,6 @@
 		- [DONE] 解耦用横截面生成Mesh的功能。
 		- [DONE] 在Generator里面调用生成横截面并执行生成Mesh的过程。
 		- [DONE] 处理解耦后的Generator生成Mesh时报的空指针错误。
-		- [DOING] 处理调用圆角矩形Mesh生成时的运行时报错。
+		- [DONE] 处理调用圆角矩形Mesh生成时的运行时报错。
+		- [DOING] 解决DeepSeek生成的圆角矩形横截面的点不是逆时针顺序的问题。
 - [TO-DO] 制作桌子的支撑杆，这需要用到非直线形状的延伸方向。
