@@ -36,4 +36,6 @@
 		- [DONE] 用圆形横截面实现简单的棍状Mesh。
 		- [DONE] 实现了基于transform向Mesh中添加横截面的逻辑。
 		- [DONE] 实现了基于中心点和XY映射向Mesh中添加横截面的逻辑。
-		- [DOING] 制作弧形延伸的基于横截面的Mesh。
+		- [DONE] 验证弧形Mesh弯角Mesh部分，形状符合预期。
+		- [DOING] 弧形弯角部分与水平直线部分连接处不符合预期。
+		- [TO-DO] 制作弧形延伸的基于横截面的Mesh。
