@@ -15,3 +15,4 @@
 - [DONE] 子任务7 3D Gaussian的光影交互。
 - [DONE] 子任务8 在虚幻引擎里面调用三维重建的交互逻辑。
 - [GIVE-UP] 子任务9 复现成品场景
+- [TO-DO] 子任务10 缝合GaussianCube到UE中
