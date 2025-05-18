@@ -15,4 +15,5 @@
 - [DONE] 子任务7 3D Gaussian的光影交互。
 - [DONE] 子任务8 在虚幻引擎里面调用三维重建的交互逻辑。
 - [GIVE-UP] 子任务9 复现成品场景
-- [DOING] 子任务10 缝合GaussianCube到UE中
+- [GIVE-UP] 子任务10 缝合GaussianCube到UE中
+- [TO-DO] 确认Hunyuan3D在本地部署后的效果是否满足要求。
