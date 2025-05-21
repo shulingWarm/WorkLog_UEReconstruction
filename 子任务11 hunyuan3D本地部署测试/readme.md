@@ -4,4 +4,8 @@
 
 # 工作记录
 - [DONE] 安装hunyuan3D所需的依赖库，pip install hunyuan3D本体。
-- [DOING] 下载hunyuan3D的模型文件。
+- [DONE] 下载hunyuan3D的模型文件。
+- [DONE] 测试hunyuan3D生成Mesh模型，图生3D效果良好。
+
+# 结果
+- 目前已经可以确认效果适合作为UE后端的3D生成模型。
