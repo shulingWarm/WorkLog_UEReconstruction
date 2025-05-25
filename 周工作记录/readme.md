@@ -108,3 +108,10 @@
 - [DONE] 完成4090D主机的组装，后续可以开始深度学习模型相关的工作。
 - [DONE] 在主机上部署GaussianCube发现效果并不好。
 - [TO-DO] 测试Hunyuan3D在本地部署后的3D生成效果。
+
+# 2025/5/25
+- [DONE] Hunyuan 3D在本地部署后图生3D效果良好，可以用于在UE上部署。
+- [DONE] 测试Windows上的UE与Linux上服务端的网络通信。
+- [DONE] 实现UE在运行时加载图片。
+- [DOING] 测试Hunyuan直接从数据流中读取图片而不是从文件中。
+- [TO-DO] 测试hunyuan通过UE发来的图片生成mesh的效果。
