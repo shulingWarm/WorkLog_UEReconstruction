@@ -10,7 +10,9 @@
 		- [DONE] 测试通过UE客户端和Linux中的服务端可能收发数据。
 - [DONE] 从UE向Linux发送图片。
 - [DONE] 在Linux端凭空生成适用于hunyuan的图片。
-- [DOING] 在Linux端接收UE发送来的图片并保存到Linux本地确认传输正常。
+- [DONE] 在Linux端接收UE发送来的图片并保存到Linux本地确认传输正常。
 	- 状态:
 		- [DONE] 测试发现UE端可以正常发出去，但python端对解码有要求。
-		- [TO-DO] 研究python端对于非字符串类型的数据格式。
+		- [DONE] 研究python端对于非字符串类型的数据格式。
+	- 结果: Linux端可以接收并保存图片，但双端之间无法一次性传输大量数据，只能传小图片。
+- [TO-DO] 实现双端之间用于传输大量数据的buffer。
