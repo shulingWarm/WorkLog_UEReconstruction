@@ -24,5 +24,5 @@
 		- [DONE] 实现Python端的分包管理器。
 		- [DONE] 实现Python端的接收图片数据头的消息。
 		- [DONE] 实现python端的请求图片数据行的消息。
-		- [DOING] 实现UE下ImageSolver的子类实现。
-		- [TO-DO] 实现C++端处理图片请求数据行的消息，收到消息后回传请求的图片行。
+		- [DONE] 实现UE下ImageSolver的子类实现。
+		- [DOING] 实现C++端处理图片请求数据行的消息，收到消息后回传请求的图片行。
