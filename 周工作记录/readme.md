@@ -120,3 +120,8 @@
 - [DOING] 测试Hunyuan直接从数据流中读取图片。
 	- [DONE] 测试基本的UE和Linux服务端之间的通信。
 	- [DOING] 解决UE到Linux之间不能一次性发送图片的问题。
+
+# 2025/6/8
+- [DOING] 测试Hunyuan直接从数据流中读取图片。
+	- [DOING] 搭建UE和python服务端之间的消息通信机制。
+	- [TO-DO] 解决UE到Linux之间不能一次性发送图片的问题。
