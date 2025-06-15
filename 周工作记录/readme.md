@@ -125,3 +125,8 @@
 - [DOING] 测试Hunyuan直接从数据流中读取图片。
 	- [DOING] 搭建UE和python服务端之间的消息通信机制。
 	- [TO-DO] 解决UE到Linux之间不能一次性发送图片的问题。
+
+# 2025/6/15
+- [DONE] Hunyuan3D直接从数据流中读取图片。
+- [DONE] Hunyuan3D收到UE发来的图片后开始做Mesh生成。
+- [TO-DO] Hunyuan3D完成Mesh生成后，将Mesh回传给UE。
