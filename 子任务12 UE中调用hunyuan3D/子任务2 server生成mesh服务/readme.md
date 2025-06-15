@@ -7,4 +7,7 @@
 - [DONE] 定义由Server调用生成Mesh的消息，需要实现为异步生成的形式。
 - [DONE] 在C++端实现请求server生成Mesh的消息。
 - [DONE] 测试从发起请求到开始生成Mesh的pipeline能否正常执行。
-- [TO-DO] 实现mesh生成完成后的回传过程。
+- [DONE] 确认mesh里面节点的uv是否存在。
+	- 结果: 不存在，需要手动创建uv。
+- [DOING] 实现mesh生成完成后的回传过程。
+	- [DOING] 创建发送mesh的数据头。
