@@ -11,6 +11,7 @@
 	- 结果: 不存在，需要手动创建uv。
 - [DOING] 实现mesh生成完成后的回传过程。
 	- [DONE] 创建发送mesh的数据头。
-	- [DOING] C++接收数据头。
-	- [TO-DO] C++回传接收成功的信息。
-	- [TO-DO] 服务端收到信息后发送具体的节点信息。
+	- [DONE] C++接收数据头。
+	- [DONE] C++定义抽象的Mesh接口，用于做mesh动态读写。
+	- [DOING] Python实现Mesh的动态接口，用于做mesh的动态读写。
+	- [TO-DO] 实现指定的vertex序列的请求消息。
