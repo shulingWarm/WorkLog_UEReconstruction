@@ -13,5 +13,7 @@
 	- [DONE] 创建发送mesh的数据头。
 	- [DONE] C++接收数据头。
 	- [DONE] C++定义抽象的Mesh接口，用于做mesh动态读写。
-	- [DOING] Python实现Mesh的动态接口，用于做mesh的动态读写。
-	- [TO-DO] 实现指定的vertex序列的请求消息。
+	- [DONE] Python实现Mesh的动态接口，用于做mesh的动态读写。
+	- [DONE] 实现指定的vertex序列的请求消息。
+	- [DONE] C++收到回传消息后，请求下一行的消息。
+	- [TO-DO] 服务端检查是否已经发送了所有的节点，如果已经发送了所有节点，向客户端发送通知。
