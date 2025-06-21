@@ -130,3 +130,9 @@
 - [DONE] Hunyuan3D直接从数据流中读取图片。
 - [DONE] Hunyuan3D收到UE发来的图片后开始做Mesh生成。
 - [TO-DO] Hunyuan3D完成Mesh生成后，将Mesh回传给UE。
+
+# 2025/6/22
+- [DOING] Hunyuan3D完成Mesh生成后，将Mesh回传给UE。
+	- [DONE] 将Mesh的每个节点回传给UE。
+	- [DOING] 将Mesh的每个face回传给UE。
+	- [TO-DO] UE收到Mesh信息后，拼成实际的Mesh并投放到场景中。
