@@ -20,3 +20,6 @@
 	- [DONE] 解决客户端新写代码的编译错误。
 	- [DONE] 服务端从文件中加载一个mesh用于测试向客户端发送mesh。
 	- [DOING] 完成节点传输后，将mesh的每个face也分包发送给C++端。
+		- [DONE] 实现face传输的包控制逻辑。
+		- [TO-DO] 测试face的传输效果。
+	- [TO-DO] C++端的MeshSolver子类实现。
