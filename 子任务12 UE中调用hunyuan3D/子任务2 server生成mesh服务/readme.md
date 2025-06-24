@@ -23,4 +23,7 @@
 		- [DONE] 实现face传输的包控制逻辑。
 		- [DONE] 测试face的传输效果。
 	- [DONE] C++端的MeshSolver子类实现添加节点和face的功能(还没有实现添加UV)。
-	- [TO-DO] 部署hunyuan3D里面的贴图生成过程, 这样python端就可以存在UV了。
+	- [DOING] 部署hunyuan3D里面的贴图生成过程, 这样python端就可以存在UV了。
+		- [DONE] 实现hunyuan3D的部署pipeline。
+		- [DOING] 解决因differs版本问题导致的paint模型加载错误。
+		- [TO-DO] 验证paint模型生成的贴图的效果。
