@@ -23,7 +23,9 @@
 		- [DONE] 实现face传输的包控制逻辑。
 		- [DONE] 测试face的传输效果。
 	- [DONE] C++端的MeshSolver子类实现添加节点和face的功能(还没有实现添加UV)。
-	- [DOING] 部署hunyuan3D里面的贴图生成过程, 这样python端就可以存在UV了。
+	- [DONE] 部署hunyuan3D里面的贴图生成过程, 这样python端就可以存在UV了。
 		- [DONE] 实现hunyuan3D的部署pipeline。
-		- [DOING] 解决因differs版本问题导致的paint模型加载错误。
-		- [TO-DO] 验证paint模型生成的贴图的效果。
+		- [DONE] 解决因differs版本问题导致的paint模型加载错误。
+		- [DONE] 验证paint模型生成的贴图的效果。
+		- 结果: 生成一次模型贴图需要超过20分钟，这是一个过于长的时间，因此需要寻找更快速的方案。
+	- [TO-DO] 部署hunyuan3D 2.1，为了寻找一个时间更快的贴图生成模型。
