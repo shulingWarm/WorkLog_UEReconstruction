@@ -136,3 +136,11 @@
 	- [DONE] 将Mesh的每个节点回传给UE。
 	- [DOING] 将Mesh的每个face回传给UE。
 	- [TO-DO] UE收到Mesh信息后，拼成实际的Mesh并投放到场景中。
+
+# 2025/6/29
+- [DOING] 部署Hunyuan3D 2.1来解决原始贴图过慢的问题.
+	- [DONE] 验证Hunyuan3D 2.1的效果。
+	- [TO-DO] 从Hunyuan3D 2.1的Mesh生成结果里面取出Mesh数据结构。
+- [TO-DO] Hunyuan3D完成Mesh后，将Mesh回传给UE。
+	- [DONE] 将Mesh的每个face回传给UE。
+	- [TO-DO] 将贴图信息回传给UE。
