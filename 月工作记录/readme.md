@@ -45,3 +45,11 @@
 	- 状态:
 		- [DONE] 在服务器上配置混元3D进行推理，效果良好。
 		- [DOING] 建立UE与Linux上服务端程序的通信。
+
+# 6月
+- [DOING] 在虚幻引擎中部署混元3D，用于图生3D。
+	- [DONE] 建立python server和UE之间的消息通信机制。
+	- [DONE] 实现两端之间的图片传输，mesh的vertex和face传输。
+	- [DONE] 在server上部署Hunyuan3D 2.1的纹理生成模型。
+	- [DOING] 在server生成mesh的pipeline里面集成生成纹理的pipeline。
+	- [TO-DO] 测试通过UE向server发起请求执行完整文生图的过程。
