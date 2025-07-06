@@ -144,3 +144,11 @@
 - [TO-DO] Hunyuan3D完成Mesh后，将Mesh回传给UE。
 	- [DONE] 将Mesh的每个face回传给UE。
 	- [TO-DO] 将贴图信息回传给UE。
+
+# 2025/7/6
+- [DONE] 部署Hunyuan3D 2.1解决生成贴图过慢的问题。
+	- [DONE] 验证发现Hunyuan3D 2.1生成的mesh是直接的numpy数组形式。
+	- [DONE] 基于Numpy数组封装mesh。
+- [DONE] 解决因python多线程导致的推理线程过慢的问题，python里面没有真正的多线程。
+- [DONE] 实现通用的长数组传输框架。
+- [DOING] 基于通用的长数组传输框架回传uv和纹理信息。
