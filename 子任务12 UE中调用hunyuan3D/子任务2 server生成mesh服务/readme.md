@@ -40,5 +40,5 @@
 	- [DOING] 回传mesh的uv。
 		- [DONE] 实现通用的传输长数组的消息。
 		- [DONE] 基于通用的长数组传输消息传输vertex UV内容。
-		- [TO-DO] 基于通用长数组实现face uv的回传。
+		- [DONE] 基于通用长数组实现face uv的回传。
 		- [TO-DO] 基于通用长数组传输实现texture数据的回传。 
