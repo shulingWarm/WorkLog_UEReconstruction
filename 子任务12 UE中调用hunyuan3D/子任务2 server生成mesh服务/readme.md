@@ -41,4 +41,6 @@
 		- [DONE] 实现通用的传输长数组的消息。
 		- [DONE] 基于通用的长数组传输消息传输vertex UV内容。
 		- [DONE] 基于通用长数组实现face uv的回传。
+		- [DONE] 给C++端的texture添加set接口。
+		- [DOING] 给mesh操作texture的接口。
 		- [TO-DO] 基于通用长数组传输实现texture数据的回传。 
