@@ -37,10 +37,13 @@
 		- [DONE] 将python里面hunyuan3D的推理过程改成同步调用，推理时不再处理消息。后续考虑改成多进程实现。
 		- [DONE] 解决加载好的mesh没有经过降采样导致的贴图生成速度过慢的问题。
 		- [DONE] 解决mesh回传时造成的C++端崩溃问题。
-	- [DOING] 回传mesh的uv。
+	- [DONE] 回传mesh的uv。
 		- [DONE] 实现通用的传输长数组的消息。
 		- [DONE] 基于通用的长数组传输消息传输vertex UV内容。
 		- [DONE] 基于通用长数组实现face uv的回传。
 		- [DONE] 给C++端的texture添加set接口。
-		- [DOING] 给mesh操作texture的接口。
-		- [TO-DO] 基于通用长数组传输实现texture数据的回传。 
+		- [DONE] 给mesh操作texture的接口。
+		- [DONE] 基于通用长数组传输实现texture数据的回传。 
+	- [DOING] 测试回传pipeline是否能正常跑通。
+		- [DOING] 解决回传vertex uv之后没有触发后续传输的问题。
+		
