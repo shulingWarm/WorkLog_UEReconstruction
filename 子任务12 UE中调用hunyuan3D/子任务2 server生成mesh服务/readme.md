@@ -44,6 +44,9 @@
 		- [DONE] 给C++端的texture添加set接口。
 		- [DONE] 给mesh操作texture的接口。
 		- [DONE] 基于通用长数组传输实现texture数据的回传。 
-	- [DOING] 测试回传pipeline是否能正常跑通。
-		- [DOING] 解决回传vertex uv之后没有触发后续传输的问题。
-		
+	- [DONE] 测试回传pipeline是否能正常跑通。
+		- [DONE] 解决回传vertex uv之后没有触发后续传输的问题。
+		- [DONE] 完成了回传pipeline的测试，UE接收完所有数据流后没有报错。
+	- [DOING] 在UE上实现从文件中读写mesh数据流，用于验证从数据流中构建场景mesh。
+	- [TO-DO] 基于文件数据流实现构造场景中的mesh，先实现不带纹理的mesh。
+	- [TO-DO] 对于上述添加到游戏场景中的mesh，叠加数据流中的纹理。
