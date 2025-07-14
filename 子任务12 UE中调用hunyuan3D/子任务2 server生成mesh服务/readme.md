@@ -49,7 +49,9 @@
 		- [DONE] 完成了回传pipeline的测试，UE接收完所有数据流后没有报错。
 	- [DONE] 在UE上实现从文件中读写mesh数据流，用于验证从数据流中构建场景mesh。
 	- [DONE] 测试收到server回传的数据后，将mesh数据dump下来。
-	- [DOING] 基于文件数据流实现构造场景中的mesh，先实现不带纹理的mesh。
+	- [DONE] 基于文件数据流实现构造场景中的mesh，先实现不带纹理的mesh。
 		- [DONE] 将mesh数据直接在场景中构建，形状没有问题，但面法向量有问题。
-		- [TO-DO] 解决mesh的面法向量错误的问题。
-	- [TO-DO] 对于上述添加到游戏场景中的mesh，叠加数据流中的纹理。
+		- [DONE] 解决mesh的面法向量错误的问题。
+	- [DOING] 对于上述添加到游戏场景中的mesh，叠加数据流中的纹理。
+		- [DONE] 将MeshSolver里面的texture转换成UTexture2D。
+		- [DOING] 解决纹理贴图颜色异常。
