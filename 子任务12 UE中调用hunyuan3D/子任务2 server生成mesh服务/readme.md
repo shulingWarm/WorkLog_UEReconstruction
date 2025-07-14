@@ -54,4 +54,5 @@
 		- [DONE] 解决mesh的面法向量错误的问题。
 	- [DOING] 对于上述添加到游戏场景中的mesh，叠加数据流中的纹理。
 		- [DONE] 将MeshSolver里面的texture转换成UTexture2D。
-		- [DOING] 解决纹理贴图颜色异常。
+		- [DONE] 解决纹理贴图颜色异常，原因是Hunyuan2.1生成的贴图是float类型的，需要转数据类型。
+		- [TO-DO] 解决纹理的UV异常的问题。
