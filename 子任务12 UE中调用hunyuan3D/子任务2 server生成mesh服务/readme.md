@@ -55,4 +55,6 @@
 	- [DOING] 对于上述添加到游戏场景中的mesh，叠加数据流中的纹理。
 		- [DONE] 将MeshSolver里面的texture转换成UTexture2D。
 		- [DONE] 解决纹理贴图颜色异常，原因是Hunyuan2.1生成的贴图是float类型的，需要转数据类型。
-		- [TO-DO] 解决纹理的UV异常的问题。
+		- [DOING] 解决纹理的UV异常的问题。
+			- [DONE] 验证了UE端的UV数据和server端的UV数据完全一致。
+			- [DOING] 观察server里面对于mesh数据的解读和UE端是否存在不同。
