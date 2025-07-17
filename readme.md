@@ -17,4 +17,5 @@
 - [GIVE-UP] 子任务9 复现成品场景
 - [GIVE-UP] 子任务10 缝合GaussianCube到UE中
 - [DONE] 子任务11 确认Hunyuan3D在本地部署后的效果是否满足要求。
-- [DOING] 子任务12 在UE中调用Hunyuan3D的Mesh生成。
+- [DONE] 子任务12 在UE中调用Hunyuan3D的Mesh生成。
+- [TO-DO] 子任务13 调研LLM上下文记忆的可能性。

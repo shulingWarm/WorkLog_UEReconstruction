@@ -9,7 +9,7 @@
 - [DONE] 测试从发起请求到开始生成Mesh的pipeline能否正常执行。
 - [DONE] 确认mesh里面节点的uv是否存在。
 	- 结果: 不存在，需要手动创建uv。
-- [DOING] 实现mesh生成完成后的回传过程。
+- [DONE] 实现mesh生成完成后的回传过程。
 	- [DONE] 创建发送mesh的数据头。
 	- [DONE] C++接收数据头。
 	- [DONE] C++定义抽象的Mesh接口，用于做mesh动态读写。
@@ -52,9 +52,14 @@
 	- [DONE] 基于文件数据流实现构造场景中的mesh，先实现不带纹理的mesh。
 		- [DONE] 将mesh数据直接在场景中构建，形状没有问题，但面法向量有问题。
 		- [DONE] 解决mesh的面法向量错误的问题。
-	- [DOING] 对于上述添加到游戏场景中的mesh，叠加数据流中的纹理。
+	- [DONE] 对于上述添加到游戏场景中的mesh，叠加数据流中的纹理。
 		- [DONE] 将MeshSolver里面的texture转换成UTexture2D。
 		- [DONE] 解决纹理贴图颜色异常，原因是Hunyuan2.1生成的贴图是float类型的，需要转数据类型。
 		- [DOING] 解决纹理的UV异常的问题。
 			- [DONE] 验证了UE端的UV数据和server端的UV数据完全一致。
-			- [DOING] 观察server里面对于mesh数据的解读和UE端是否存在不同。
+			- [DONE] 观察server里面对于mesh数据的解读和UE端是否存在不同。
+	- 结果: 目前mesh可以回传到UE并且可以在UE上正常显示出来Mesh。
+
+# 结果
+- 建立了server到UE的数据传输通路。
+- UE在收到server发来的mesh后可以正常显示三维模型。
