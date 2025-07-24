@@ -14,5 +14,7 @@
 	- 最终确认，在扩展词表里面添加记忆模块，在词表里面添加一些新的token，这些token不是输出token而是中间的思考token。
 - [DOING] 搭建中间的思考token的接口，把不确定怎样实现的部分声明为抽象接口。
 	- [DONE] 实现了扩展model词表和embedding的函数。
-	- [DOING] 研究MS Swift里面的lora训练代码，观察什么地方指定了只训练Lora层。
-	- [TO-DO] 指定训练时只训练其中的两列embedding。
+	- [DONE] 研究MS Swift里面的lora训练代码，观察什么地方指定了只训练Lora层。
+	- [DONE] 封装将Embedding层拆分成部分可训练的计算层。
+	- [DOING] 封装将Linear层拆分成部分可训练的计算层。
+	- [TO-DO] 将两个封装过的部分可训练的计算层替换Qwen3里面原本的Embedding和Linear层。
