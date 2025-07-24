@@ -16,5 +16,6 @@
 	- [DONE] 实现了扩展model词表和embedding的函数。
 	- [DONE] 研究MS Swift里面的lora训练代码，观察什么地方指定了只训练Lora层。
 	- [DONE] 封装将Embedding层拆分成部分可训练的计算层。
-	- [DOING] 封装将Linear层拆分成部分可训练的计算层。
+	- [DONE] 封装将Linear层拆分成部分可训练的计算层。
+	- [DONE] 验证Swift可以直接添加新的训练模式，默认情况下是一种无训练参数的训练。
 	- [TO-DO] 将两个封装过的部分可训练的计算层替换Qwen3里面原本的Embedding和Linear层。
