@@ -18,4 +18,5 @@
 	- [DONE] 封装将Embedding层拆分成部分可训练的计算层。
 	- [DONE] 封装将Linear层拆分成部分可训练的计算层。
 	- [DONE] 验证Swift可以直接添加新的训练模式，默认情况下是一种无训练参数的训练。
-	- [TO-DO] 将两个封装过的部分可训练的计算层替换Qwen3里面原本的Embedding和Linear层。
+	- [DONE] 在embedding的扩展函数里面同时扩展tokenizer和embedding, linear.
+	- [TO-DO] 在Swift的训练之前调用外部传入的参数预处理回调函数。
