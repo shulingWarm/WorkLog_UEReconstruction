@@ -20,4 +20,7 @@
 	- [DONE] 验证Swift可以直接添加新的训练模式，默认情况下是一种无训练参数的训练。
 	- [DONE] 在embedding的扩展函数里面同时扩展tokenizer和embedding, linear.
 	- [DONE] 调查发现tokenizer的过程并不是一般的调用形式，而是在数据集加载的时候就处理好的，并且调用栈目前无法确定。
+	- [DONE] 关掉datasets里面的cache后，就可以稳定地打印出调用栈了。
+	- [DONE] 实现了生成tokenizer的回调接口，用于替换swift里面prompt转换成input id的过程。
+	- [DOING] 实现在模型回答的句子最前面添加训练token。
 	- [TO-DO] 在Swift的训练之前调用外部传入的参数预处理回调函数。
