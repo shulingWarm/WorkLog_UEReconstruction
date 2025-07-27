@@ -163,3 +163,8 @@
 - [TO-DO] 研究多模态生成模型的多轮对话生成的能力。
 - [TO-DO] 研究3D生成模型的多轮对话生成。
 - [TO-DO] 研究3D生成模型的长期记忆能力，以此解决训练数据不足的问题。
+
+# 2025/7/27
+- [DOING] 每当大模型遇到新的概念时，在词表添加新的token，然后训练token的embedding。
+	- [DONE] 制作对embedding和linear的封装，允许linear和embedding分别对某些列做训练。
+	- [DOING] 在框架即将开始训练的时候替换linear和embedding。
