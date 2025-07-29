@@ -4,4 +4,7 @@
 
 # 工作过程
 - [DONE] 只使用一个句子做训练，确认带思考token的情况下，loss仍然可以逐步下降并收敛。
+- [DONE] 为了验证训练思考token的效果，将原版模型先扩展词表再保存下来。
+- [DONE] 令模型训练思考token时改成由think_token的字符串生成think_token的id。
+- [DONE] 对插入后的think token训练后保存示例checkpoint。
 - [TO-DO] 确认这种只只训练部分embedding的模式下，保存下来的checkpoint是什么。
