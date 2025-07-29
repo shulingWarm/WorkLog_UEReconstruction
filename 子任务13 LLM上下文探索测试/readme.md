@@ -22,5 +22,5 @@
 	- [DONE] 调查发现tokenizer的过程并不是一般的调用形式，而是在数据集加载的时候就处理好的，并且调用栈目前无法确定。
 	- [DONE] 关掉datasets里面的cache后，就可以稳定地打印出调用栈了。
 	- [DONE] 实现了生成tokenizer的回调接口，用于替换swift里面prompt转换成input id的过程。
-	- [DOING] 实现在模型回答的句子最前面添加训练token。
-	- [TO-DO] 在Swift的训练之前调用外部传入的参数预处理回调函数。
+	- [DONE] 实现在模型回答的句子最前面添加训练token。
+	- 子任务1 通过临时添加的token让大模型学习概念。
