@@ -53,3 +53,10 @@
 	- [DONE] 在server上部署Hunyuan3D 2.1的纹理生成模型。
 	- [DOING] 在server生成mesh的pipeline里面集成生成纹理的pipeline。
 	- [TO-DO] 测试通过UE向server发起请求执行完整文生图的过程。
+
+# 7月
+- [DONE] 在虚幻引擎中部署混元3D，用于图生3D。
+	- 完成了server端与UE的通信框架。
+	- UE端收到3D模型后可以正常显示mesh与贴图。
+- [DOING] 为了后续提出对话式的3D生成模型，预研究基于词表训练的LLM模型。
+	- [DOING] 搭建词表训练的Demo，通过扩展模型词表来让模型记住更多信息。
