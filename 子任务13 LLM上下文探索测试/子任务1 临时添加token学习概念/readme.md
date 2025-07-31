@@ -8,5 +8,9 @@
 - [DONE] 令模型训练思考token时改成由think_token的字符串生成think_token的id。
 - [DONE] 对插入后的think token训练后保存示例checkpoint。
 - [DONE] 确认发现只训练部分词表的方式下，swift无法保存下来有效的checkpoint，保存下来的文件是空的。
-- [DOING] 给swift添加保存checkpoint的钩子。
+- [DONE] 给swift添加保存checkpoint的钩子。
+	- [DONE] 定位到了swift里面保存checkpoint的位置。
+	- [DONE] 定义了checkpoint保存的回调格式。
+	- [DONE] 在swift里面对应的位置添加注册回调。
+- [TO-DO] 实现针对embedding部分训练的定制化checkpoint保存方案。
 - [TO-DO] 确认这种只训练部分embedding的模式下，保存下来的checkpoint是什么。
