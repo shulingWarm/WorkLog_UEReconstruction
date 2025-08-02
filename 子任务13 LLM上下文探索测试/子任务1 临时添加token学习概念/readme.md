@@ -12,5 +12,7 @@
 	- [DONE] 定位到了swift里面保存checkpoint的位置。
 	- [DONE] 定义了checkpoint保存的回调格式。
 	- [DONE] 在swift里面对应的位置添加注册回调。
-- [TO-DO] 实现针对embedding部分训练的定制化checkpoint保存方案。
-- [TO-DO] 确认这种只训练部分embedding的模式下，保存下来的checkpoint是什么。
+- [DONE] 实现针对embedding部分训练的定制化checkpoint保存方案。
+- [DONE] 确认这种只训练部分embedding的模式下，保存下来的checkpoint是什么。
+	- 保存下来的是对应的训练部分的tensor的pr文件。
+- [DOING] 加载训练部分的embedding用于模型推理。
