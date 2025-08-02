@@ -168,3 +168,10 @@
 - [DOING] 每当大模型遇到新的概念时，在词表添加新的token，然后训练token的embedding。
 	- [DONE] 制作对embedding和linear的封装，允许linear和embedding分别对某些列做训练。
 	- [DOING] 在框架即将开始训练的时候替换linear和embedding。
+
+# 2025/8/3
+- [DOING] 每当大模型遇到新的概念时，在词表添加新的token，然后训练token的embedding。
+	- [DONE] 替换模型里面的embedding和linear, 确保只训练部分单词。
+	- [DONE] 实现为embedding和linear部分训练适配的保存checkpoint的方式。
+	- [DONE] 测试使用部分训练的embedding和linear做推理。
+	- [DOING] 解决使用部分训练的embedding和linear推理时的报错。
