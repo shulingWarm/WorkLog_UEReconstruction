@@ -15,4 +15,8 @@
 - [DONE] 实现针对embedding部分训练的定制化checkpoint保存方案。
 - [DONE] 确认这种只训练部分embedding的模式下，保存下来的checkpoint是什么。
 	- 保存下来的是对应的训练部分的tensor的pr文件。
-- [DOING] 加载训练部分的embedding用于模型推理。
+- [DONE] 加载训练部分的embedding用于模型推理。
+	- 用加载checkpoint后的模型推理，发现没有训练效果，仍然和训练之前的推理内容相同。
+- [DONE] 将think_token添加到换行符之后重新训练，添加到\<think\>与换行符之间没有意义。
+	- 用这种方式训练得到的模型，会在推理时报错。
+- [DOING] 解决在换行符后添加think_token报错。
