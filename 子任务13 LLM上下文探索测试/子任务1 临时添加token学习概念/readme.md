@@ -23,4 +23,6 @@
 	- 将推理使用的数据类型换成bf16就可以了。
 - [DONE] 验证发现添加的think_token会干扰到其他正常对话内容，导致以前的知识遗忘。
 - [DONE] 改成让think_token均匀分布在训练句子里面，效果仍然是会出现知识遗忘。
-- [DOING] 验证训练的时候有没有对非think_token位置的logits形成约束。
+- [DONE] 验证训练的时候有没有对非think_token位置的logits形成约束。
+	- 验证发现训练的时候对于非think_token的位置没有形成约束，并没有抑制其他id。
+- [DOING] 实现约束函数，在不该出现think_token的位置抑制think_token的出现。
