@@ -25,4 +25,8 @@
 - [DONE] 改成让think_token均匀分布在训练句子里面，效果仍然是会出现知识遗忘。
 - [DONE] 验证训练的时候有没有对非think_token位置的logits形成约束。
 	- 验证发现训练的时候对于非think_token的位置没有形成约束，并没有抑制其他id。
-- [DOING] 实现约束函数，在不该出现think_token的位置抑制think_token的出现。
+- [DONE] 实现约束函数，在不该出现think_token的位置抑制think_token的出现。
+- [DONE] 给swift添加自定义约束函数的接口，调用抑制think_token的loss函数。
+- [DONE] 使用抑制token训练得到的checkpoint仍然无法得到正常的推理效果。
+- [DOING] 改用更长的训练时间，测试训练效果。
+- [TO-DO] 添加一个推理测试接口，打印输入一句话之后下次预测的内容，以及期望token的预测概率。
