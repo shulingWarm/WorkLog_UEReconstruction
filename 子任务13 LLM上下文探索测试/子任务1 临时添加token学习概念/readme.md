@@ -28,5 +28,7 @@
 - [DONE] 实现约束函数，在不该出现think_token的位置抑制think_token的出现。
 - [DONE] 给swift添加自定义约束函数的接口，调用抑制think_token的loss函数。
 - [DONE] 使用抑制token训练得到的checkpoint仍然无法得到正常的推理效果。
-- [DOING] 改用更长的训练时间，测试训练效果。
+- [DONE] 改用更长的训练时间，测试训练效果。
+	- 用更长时间的训练是可以达到训练效果的，训练之后think_token基本不会干扰正常推理。
+- [DONE] 为了后续在模型推理过程中添加打印信息，成功在transformers里面注册一个等价模型，可以将模型代码解耦到transformer外面。
 - [TO-DO] 添加一个推理测试接口，打印输入一句话之后下次预测的内容，以及期望token的预测概率。
