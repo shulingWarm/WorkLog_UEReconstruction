@@ -175,3 +175,10 @@
 	- [DONE] 实现为embedding和linear部分训练适配的保存checkpoint的方式。
 	- [DONE] 测试使用部分训练的embedding和linear做推理。
 	- [DOING] 解决使用部分训练的embedding和linear推理时的报错。
+
+# 2025/8/10
+- [DOING] 每当大模型遇到新的概念时，在词表添加新的token，然后训练token的embedding。
+	- [DONE] 测试后确认静态添加新的token可以用于记忆新的信息，但对于其他非训练句子仍存在干扰。
+	- [DOING] 设计不对其他非训练问题产生干扰的训练方法。
+		- [DOING] 使用反算模式而不是训练模式，直接根据期望输出的token反算embedding应该具有的向量数据。
+		- [TO-DO] 检查对于输入句子预测不准确的地方，在对于的地方插入反处出来的引导token。
