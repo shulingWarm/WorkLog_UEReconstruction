@@ -24,4 +24,4 @@
 	- [DONE] 实现了生成tokenizer的回调接口，用于替换swift里面prompt转换成input id的过程。
 	- [DONE] 实现在模型回答的句子最前面添加训练token。
 	- [DONE] 子任务1 通过临时添加的token让大模型学习概念。
-	- [DOING] 子任务2 添加model里面直接反算插入embedding的方法，根据期望输出反算而不是用训练的方式获得。
+	- [GIVE-UP] 子任务2 添加model里面直接反算插入embedding的方法，根据期望输出反算而不是用训练的方式获得。

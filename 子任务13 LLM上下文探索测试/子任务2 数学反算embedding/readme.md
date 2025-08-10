@@ -7,3 +7,7 @@
 	- [DONE] 实现专用的ThinkModel用于分离Qwen3CausalLM的实现，方便后续做修改。
 	- [DOING] 实现embedding的分离效果，分为思考embedding和原始的embedding。
 	- [DOING] 将分离后的embedding添加到Qwen3Model里面。
+
+# 放弃原因
+- 仅仅lm_head可以根据匹配输入反算，embedding无法反算。
+- 后续可以考虑用反馈环路计算KV-cache。
