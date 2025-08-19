@@ -6,3 +6,5 @@
 - [GIVE-UP] 研究怎样将数据包传输过程变得安全。
 	- UE端贴图不完整的问题无法稳定复现，等后续再解决。
 - [DOING] 将UE向服务端发送图片的实现改为使用LongArray消息。
+	- [DOING] 实现从UE向服务端发送LongArray的逻辑(以前UE端只有接收LongArray的实现)
+	- [TO-DO] 将服务端发送图片改为使用LongArray。
