@@ -7,5 +7,6 @@
 	- UE端贴图不完整的问题无法稳定复现，等后续再解决。
 - [DOING] 将UE向服务端发送图片的实现改为使用LongArray消息。
 	- [DONE] 实现从UE向服务端发送LongArray的逻辑(以前UE端只有接收LongArray的实现)
-	- [DOING] 解决request和data_back这两个message循环引用的问题。
+	- [DONE] 解决request和data_back这两个message循环引用的问题。
+	- [DOING] 实现使用LongArray情况下的EndMessage接收图片，让接收端打包图片。
 	- [TO-DO] 将服务端发送图片改为使用LongArray。
