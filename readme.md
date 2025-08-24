@@ -20,4 +20,5 @@
 - [DONE] 子任务12 在UE中调用Hunyuan3D的Mesh生成。
 - [GIVE-UP] 子任务13 调研LLM上下文记忆的可能性。
 - [DONE] 子任务14 添加在UE里面调用Hunyuan3D的用户界面。
-- [DOING] 子任务15 加速服务端与UE之间的传输速度。
+- [DONE] 子任务15 加速服务端与UE之间的传输速度。
+- [DOING] 子任务16 在UE中集成VGGT.
