@@ -4,4 +4,6 @@
 # 工作过程
 - [DONE] 在服务器上部署VGGT。
 - [DONE] 在服务器上部署OpenSplat。
-- [TO-DO] 部署VGGT配套的BA模型。
+- [DONE] 部署VGGT配套的BA模型。
+- [DONE] 实验发现VGGT在重建大场景时对显存要求过高，无法广泛使用。
+- [DOING] 部署VGGT-Long，一个支持大场景重建的项目。
