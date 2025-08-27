@@ -7,3 +7,4 @@
 - [DONE] 部署VGGT配套的BA模型。
 - [DONE] 实验发现VGGT在重建大场景时对显存要求过高，无法广泛使用。
 - [DOING] 部署VGGT-Long，一个支持大场景重建的项目。
+	- [DOING] 下载VGGT-Long的前置准备模型。
