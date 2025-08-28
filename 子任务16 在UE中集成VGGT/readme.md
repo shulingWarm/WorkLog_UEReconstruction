@@ -6,5 +6,8 @@
 - [DONE] 在服务器上部署OpenSplat。
 - [DONE] 部署VGGT配套的BA模型。
 - [DONE] 实验发现VGGT在重建大场景时对显存要求过高，无法广泛使用。
-- [DOING] 部署VGGT-Long，一个支持大场景重建的项目。
-	- [DOING] 下载VGGT-Long的前置准备模型。
+- [DONE] 部署VGGT-Long，一个支持大场景重建的项目。
+	- [DONE] 下载VGGT-Long的前置准备模型。
+- [DONE] 测试VGGT-Long的场景发现对于弱纹理场景支持较差，并且具有序列化要求。
+- [DONE] 为了方便后续的重建效果比较，在服务器上安装colmap并实现从C++代码启动重建。
+- [TO-DO] 测试vggt-low-vram，尝试能否在低显存下良好工作。
