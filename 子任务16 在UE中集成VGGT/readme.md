@@ -10,4 +10,7 @@
 	- [DONE] 下载VGGT-Long的前置准备模型。
 - [DONE] 测试VGGT-Long的场景发现对于弱纹理场景支持较差，并且具有序列化要求。
 - [DONE] 为了方便后续的重建效果比较，在服务器上安装colmap并实现从C++代码启动重建。
-- [TO-DO] 测试vggt-low-vram，尝试能否在低显存下良好工作。
+- [DONE] 测试vggt-low-vram，尝试能否在低显存下良好工作。
+	- vggt-low-vram可以在显存占用较低的情况下良好工作。
+- [DOING] 实现从代码调用vggt-low-vram，用于后续和UE的通信框架集成。
+- [TO-DO] 将vggt-low-vram和OpenSplat集成为一个完整的pipeline，通过临时文件交互即可。
