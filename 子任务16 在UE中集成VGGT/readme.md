@@ -15,4 +15,7 @@
 - [DONE] 实现从代码调用vggt-low-vram，用于后续和UE的通信框架集成。
 - [DONE] 将vggt-low-vram和OpenSplat集成为一个完整的pipeline，通过临时文件交互即可。
 - [DOING] 实现从UE向server发起重建请求，包括发送多个图片文件的过程。
+	- [DONE] 定义用于重建任务的消息包。
+	- [DONE] 添加完成重建时的后处理回调。
+	- [DOING] 在server端实现重建消息包的接收逻辑。
 - [TO-DO] server收到UE的重建请求后，执行重建并回传splat文件的结果。
