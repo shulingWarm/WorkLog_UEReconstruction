@@ -197,3 +197,13 @@
 	- 增加每包的字节数。
 	- 偶尔会出现数据不完整的情况。
 - [DOING] 将图片传输的方式改成使用LongArray传输。
+
+# 2025/8/31
+- [DONE] 将图片传输的方式改成使用LongArray传输。
+	- 从UE到server的传输过程有明显加快。
+- [DONE] 部署vggt但发现vggt消耗显存过多，无法重建大场景。
+- [DONE] long-vggt依赖图片的序列化，当传入的图片不是序列化的时候无法有效重建。
+- [DONE] 部署vggt-low-vram发现可以在消耗显存较小的情况下满足需求。
+- [DONE] 在服务器上部署Gaussian-Splatting。
+- [DONE] 在服务器上将vggt-low-vram和Gaussian-Splatting集成为独立pipeline。
+- [DOING] 实现server接收UE端发来的请求并进行重建。
