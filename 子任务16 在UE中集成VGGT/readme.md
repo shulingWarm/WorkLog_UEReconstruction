@@ -12,5 +12,7 @@
 - [DONE] 为了方便后续的重建效果比较，在服务器上安装colmap并实现从C++代码启动重建。
 - [DONE] 测试vggt-low-vram，尝试能否在低显存下良好工作。
 	- vggt-low-vram可以在显存占用较低的情况下良好工作。
-- [DOING] 实现从代码调用vggt-low-vram，用于后续和UE的通信框架集成。
-- [TO-DO] 将vggt-low-vram和OpenSplat集成为一个完整的pipeline，通过临时文件交互即可。
+- [DONE] 实现从代码调用vggt-low-vram，用于后续和UE的通信框架集成。
+- [DONE] 将vggt-low-vram和OpenSplat集成为一个完整的pipeline，通过临时文件交互即可。
+- [DOING] 实现从UE向server发起重建请求，包括发送多个图片文件的过程。
+- [TO-DO] server收到UE的重建请求后，执行重建并回传splat文件的结果。
