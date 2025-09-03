@@ -14,8 +14,8 @@
 	- vggt-low-vram可以在显存占用较低的情况下良好工作。
 - [DONE] 实现从代码调用vggt-low-vram，用于后续和UE的通信框架集成。
 - [DONE] 将vggt-low-vram和OpenSplat集成为一个完整的pipeline，通过临时文件交互即可。
-- [DOING] 由于UE端维护的数据结构越来越复杂，现在改用智能指针来维护数据。
-- [TO-DO] 实现从UE向server发起重建请求，包括发送多个图片文件的过程。
+- [DONE] 由于UE端维护的数据结构越来越复杂，现在改用智能指针来维护数据。
+- [DOING] 实现从UE向server发起重建请求，包括发送多个图片文件的过程。
 	- [DONE] 定义用于重建任务的消息包。
 	- [DONE] 添加完成重建时的后处理回调。
 	- [DONE] 在server端实现重建消息包的接收逻辑。
