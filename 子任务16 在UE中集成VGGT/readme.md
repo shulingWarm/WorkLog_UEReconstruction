@@ -15,12 +15,15 @@
 - [DONE] 实现从代码调用vggt-low-vram，用于后续和UE的通信框架集成。
 - [DONE] 将vggt-low-vram和OpenSplat集成为一个完整的pipeline，通过临时文件交互即可。
 - [DONE] 由于UE端维护的数据结构越来越复杂，现在改用智能指针来维护数据。
-- [DOING] 实现从UE向server发起重建请求，包括发送多个图片文件的过程。
+- [DONE] 实现从UE向server发起重建请求，包括发送多个图片文件的过程。
 	- [DONE] 定义用于重建任务的消息包。
 	- [DONE] 添加完成重建时的后处理回调。
 	- [DONE] 在server端实现重建消息包的接收逻辑。
 	- [DONE] 实现图片序列连续发送的逻辑，用于一次调用直接发送多个图片。
 	- [DONE] 每发送完一个图片都向server端发送一个确认消息。
-	- [DOING] server收到一个图片的确认消息后，将图片保存在workspace用于后续重建。
-	- [TO-DO] server收到所有图片后开始执行重建。
+	- [DONE] server收到一个图片的确认消息后，将图片保存在workspace用于后续重建。
+	- [DONE] server收到所有图片后开始执行重建。
+- [DONE] 实现可以从socket_server调用的pipeline，先调用vggt再调用3DGS。
+- [DONE] 实现从socket_server将重建结果回传给UE。
+- [DOING] UE从socket的回传结果中解析3DGS数据。
 - [TO-DO] server收到UE的重建请求后，执行重建并回传splat文件的结果。
