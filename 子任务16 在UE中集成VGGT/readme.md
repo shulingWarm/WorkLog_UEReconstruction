@@ -25,5 +25,7 @@
 	- [DONE] server收到所有图片后开始执行重建。
 - [DONE] 实现可以从socket_server调用的pipeline，先调用vggt再调用3DGS。
 - [DONE] 实现从socket_server将重建结果回传给UE。
-- [DOING] UE从socket的回传结果中解析3DGS数据。
+- [DONE] UE从socket的回传结果中解析3DGS数据。
+- [DONE] 要SocketServer里面添加队列用于表示待处理的需要添加的Gaussian结果。
+- [DOING] 解耦之前从文件中加载3DGS的逻辑。
 - [TO-DO] server收到UE的重建请求后，执行重建并回传splat文件的结果。
