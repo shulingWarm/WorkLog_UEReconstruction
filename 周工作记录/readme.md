@@ -207,3 +207,8 @@
 - [DONE] 在服务器上部署Gaussian-Splatting。
 - [DONE] 在服务器上将vggt-low-vram和Gaussian-Splatting集成为独立pipeline。
 - [DOING] 实现server接收UE端发来的请求并进行重建。
+
+# 2025/9/7
+- [DOING] 实现server接收UE端请求并进行重建。
+	- [DONE] 分别在UE和server上实现重建用的消息包。
+	- [DOING] 调试server到UE的通信pipeline。
