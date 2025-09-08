@@ -29,4 +29,6 @@
 - [DONE] 要SocketServer里面添加队列用于表示待处理的需要添加的Gaussian结果。
 - [DONE] 解耦之前从文件中加载3DGS的逻辑。
 - [DONE] 在UE的蓝图里面通过重建按钮调用服务器里面的重建逻辑。
-- [DOING] 解决server在import时无法import gaussian splatting的问题。
+- [DONE] 解决server在import时无法import gaussian splatting的问题。
+	- 将GaussianSplatting库里面的utils文件夹改名后解决。
+- [DOING] 解决UE无法正常读取JPG格式图片导致无法发送图片的问题。
