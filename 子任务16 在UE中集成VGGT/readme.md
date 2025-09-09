@@ -33,4 +33,7 @@
 	- 将GaussianSplatting库里面的utils文件夹改名后解决。
 - [DONE] 解决UE无法正常读取JPG格式图片导致无法发送图片的问题。
 	- UE端直接读取JPEG图片，然后将未解压的JPEG图片发送到python端。
-- [DOING] 解决UE端读取到的JPEG图片数据为空的问题。
+- [DONE] 解决UE端读取到的JPEG图片数据为空的问题。
+	- 之前读取图片的时候传入的是文件名，传对绝对路径就可以了。
+- [DONE] server上将计算结果回传给UE后，UE可以正常保存下来，且保存下来的数据正常。
+- [DOING] 解决UE上没有正常将3DGS显示在场景中的问题。
