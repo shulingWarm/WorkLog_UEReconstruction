@@ -43,4 +43,8 @@
 	- [DONE] 解决旋转工具每次打开后会跟随目标物体一起放大旋转。
 - [DONE] 在图片后缀里面添加PNG图片的支持。
 - [DONE] 用vggt的全流程重建测试通过。
-- [TO-DO] 录重建过程视频用于展示。
+- [DONE] 录重建过程视频用于展示。
+
+# 结果
+- 完成部署vggt+3D Gaussian Splatting的效果。
+- 视频: https://www.bilibili.com/video/BV1Rrp3zYEtE
