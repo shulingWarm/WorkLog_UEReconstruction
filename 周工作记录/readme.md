@@ -212,3 +212,9 @@
 - [DOING] 实现server接收UE端请求并进行重建。
 	- [DONE] 分别在UE和server上实现重建用的消息包。
 	- [DOING] 调试server到UE的通信pipeline。
+
+# 2025/9/14
+- [DONE] 实现server接收UE端请求并进行重建。
+	- [DONE] 修复UE上的旋转交互UI只能打开一次的问题。
+	- 演示视频: https://www.bilibili.com/video/BV1Rrp3zYEtE
+- [TO-DO] 在UE里面集成stable-point-aware-3d。
