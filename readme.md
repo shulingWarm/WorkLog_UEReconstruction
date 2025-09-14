@@ -22,4 +22,4 @@
 - [DONE] 子任务14 添加在UE里面调用Hunyuan3D的用户界面。
 - [DONE] 子任务15 加速服务端与UE之间的传输速度。
 - [DONE] 子任务16 在UE中集成VGGT.
-- [TO-DO] 缝合stable-point-aware-3d (原生可编辑的3D生成)。
+- [DOING] 寻找支持3D模型编辑的方案。
