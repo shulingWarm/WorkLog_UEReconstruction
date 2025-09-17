@@ -7,3 +7,7 @@
 - [DONE] 测试模型的基本推理效果。
 	- 使用模型的基本推理效果显存不够，无法加载模型。
 - [DOING] 使用modelscope的低显存推理模式来推理。
+	- [DONE] 继续下载通过python下载失败的文件。
+	- [DONE] 解决modelscope从本地加载模型的加载代码的问题。
+		- modelscope加载本地模型应该指定safetensor的绝对路径。
+	- [TO-DO] 解决加载text_encoder时的报错, text_config传入时变成了字典。
