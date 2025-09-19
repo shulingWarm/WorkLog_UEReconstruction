@@ -10,4 +10,6 @@
 	- [DONE] 继续下载通过python下载失败的文件。
 	- [DONE] 解决modelscope从本地加载模型的加载代码的问题。
 		- modelscope加载本地模型应该指定safetensor的绝对路径。
-	- [TO-DO] 解决加载text_encoder时的报错, text_config传入时变成了字典。
+	- [DONE] 解决加载text_encoder时的报错, text_config传入时变成了字典。
+	- [TO-DO] 验证是否强行将text_config改字典导致了modelscope不认state_dict。
+	- [TO-DO] 如果仍然无法正常推理就使用modelscope的API。
