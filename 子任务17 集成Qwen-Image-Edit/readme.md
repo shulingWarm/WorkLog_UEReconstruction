@@ -11,5 +11,7 @@
 	- [DONE] 解决modelscope从本地加载模型的加载代码的问题。
 		- modelscope加载本地模型应该指定safetensor的绝对路径。
 	- [DONE] 解决加载text_encoder时的报错, text_config传入时变成了字典。
-	- [TO-DO] 验证是否强行将text_config改字典导致了modelscope不认state_dict。
-	- [TO-DO] 如果仍然无法正常推理就使用modelscope的API。
+	- [DONE] 如果仍然无法正常推理就使用modelscope的API。
+		- 使用modelscope的API可以正常推理，但无法使用本地图片，而且响应速度过慢了。
+	- [DOING] 使用nunchaku的量化后的模型。
+		- [DOING] 解决默认加载方式中CPU内存不够的问题。
