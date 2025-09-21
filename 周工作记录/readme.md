@@ -218,3 +218,8 @@
 	- [DONE] 修复UE上的旋转交互UI只能打开一次的问题。
 	- 演示视频: https://www.bilibili.com/video/BV1Rrp3zYEtE
 - [TO-DO] 在UE里面集成stable-point-aware-3d。
+
+# 2025/9/21
+- [DONE] 在服务器上部署Qwen-Image-Edit。
+	- 中途涉及解决服务器显存不够的问题，最终采用nunchaku量化版本。
+- [DOING] 在UE上制作3D模型编辑的UI。
