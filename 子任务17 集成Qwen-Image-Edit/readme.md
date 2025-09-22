@@ -17,4 +17,9 @@
 		- [DONE] 解决默认加载方式中CPU内存不够的问题。
 	- 用nunchaku加载的是transformer的INT4量化版本，效果可以接受。
 - [DOING] 制作UE中调用3D模型编辑的UI。
+	- [DONE] 制作了用于生成控件的通用接口。
+	- [DONE] 把按E交互的界面做成了通用widget。
+	- [DONE] 通过horizontal stack控制了Gen 3D UI的占位。
+	- [DOING] 在Gen 3D UI里面添加关闭页面的功能。
+	- [TO-DO] 在Gen 3D UI里面添加调用3D生成的功能。
 - [TO-DO] 先调用图片编辑，再调用图生3D来间接实现3D模型编辑。
