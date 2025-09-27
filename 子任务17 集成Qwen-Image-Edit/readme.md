@@ -27,6 +27,9 @@
 	- [DONE] 定义3DMesh的描述结构。
 	- [DONE] 定义用于存储3DMesh的背包物体类型，用于传递3D Mesh。
 	- [DONE] 实现3DMesh的背包物品类型，点击后可以正常生成在场景中。
-- [DOING] 实现3DMesh生成在场景后的抓取逻辑。
-	- [DOING] 实现抽象的可抓取物体的Actor。
+- [DONE] 实现3DMesh生成在场景后的抓取逻辑。
+	- [DONE] 实现抽象的可抓取物体的Actor。
+	- [DONE] 将放有动态Mesh的Actor继承可抓取的Actor，实现任意Actor的抓取。
+- [DONE] 测试动态Mesh的抓取效果，效果正常。
+- [DOING] 实现Server端的模型加载和卸载工具，由于显存有限，需要根据使用情况动态加载和卸载。
 - [TO-DO] 先调用图片编辑，再调用图生3D来间接实现3D模型编辑。
