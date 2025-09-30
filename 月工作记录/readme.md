@@ -65,3 +65,10 @@
 - [GIVE-UP] 为了后续提出对话式的3D生成模型，预研究基于词表训练的LLM模型。
 	- LLM无法仅通过词表就理解知识内容，仅仅是可以干预推理过程，但简单增加词表无法让模型直接理解对话内容。
 - [DOING] 在UE中集成vggt+3D gaussian的三维重建pipeline，当用户输入一组图片时调用服务器上的vggt pipeline执行三维重建。
+
+# 9月
+- [DONE] 在UE上部署vggt+3D gaussian的三维重建pipeline。
+- [DONE] 修复了UE上对3DGS结果的放置操作。
+	- 演示视频: https://www.bilibili.com/video/BV1Rrp3zYEtE
+- [DONE] 在服务器上部署Qwen-Image-Edit。
+- [DOING] 在UE上实现调用Qwen-Image-Edit的接口。
