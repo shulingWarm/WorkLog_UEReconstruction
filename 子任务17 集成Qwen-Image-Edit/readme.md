@@ -39,4 +39,6 @@
 - [DONE] 在Gen3D的界面里面添加3D编辑的功能。
 - [DONE] 在Gen3D的控制台添加Mesh编辑功能的调用。
 - [DOING] 在UE的C++里面实现Server上Mesh编辑功能。
+	- [DONE] 从MeshSolver里面获取传入Mesh当初的图片来源。
+	- [TO-DO] 定义允许传入Prompt的Mesh生成内容。
 - [TO-DO] 先调用图片编辑，再调用图生3D来间接实现3D模型编辑。
