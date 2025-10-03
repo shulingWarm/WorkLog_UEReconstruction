@@ -23,3 +23,4 @@
 - [DONE] 子任务15 加速服务端与UE之间的传输速度。
 - [DONE] 子任务16 在UE中集成VGGT.
 - [DOING] 子任务17 在UE中集成QwenImageEdit。
+- [DOING] 子任务18 集成Hunyuan3D-Part。
