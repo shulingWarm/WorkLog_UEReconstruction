@@ -3,4 +3,8 @@
 - 允许玩家通过交互单独选中Mesh的某些部分。
 
 # 工作过程
-- [DOING] 熟悉Hunyuan3D-Part的工作流程。
+- [DONE] 熟悉Hunyuan3D-Part的工作流程。
+	- P3-SAM输入的是Mesh，输出的是box和在每个box里面的face_id。
+	- X-Part和P3-SAM是类似的功能，但目前模型还没有开源。
+- [DOING] 实现抽象的操作控制台。
+	- 目的: 后续可能还需要实现各种控制台，为了蓝图复用，实现一个控制台基类。
