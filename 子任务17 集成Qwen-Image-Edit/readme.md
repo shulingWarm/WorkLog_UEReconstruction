@@ -42,4 +42,5 @@
 	- [DONE] 从MeshSolver里面获取传入Mesh当初的图片来源。
 	- [DONE] 定义允许传入Prompt的Mesh生成内容。
 - [DONE] 先调用图片编辑，再调用图生3D来间接实现3D模型编辑。
-- [TO-DO] 测试通过UE调用图片编辑之后再调用Mesh生成。
+- [DONE] 测试通过UE调用图片编辑之后再调用Mesh生成。
+- [DOING] 解决ImgSolver里面的PIL Image无法直接用于模型推理的问题。
