@@ -43,4 +43,7 @@
 	- [DONE] 定义允许传入Prompt的Mesh生成内容。
 - [DONE] 先调用图片编辑，再调用图生3D来间接实现3D模型编辑。
 - [DONE] 测试通过UE调用图片编辑之后再调用Mesh生成。
-- [DOING] 解决ImgSolver里面的PIL Image无法直接用于模型推理的问题。
+- [DONE] 解决ImgSolver里面的PIL Image无法直接用于模型推理的问题。
+- [DONE] 解决Qwen-Image-Edit需要RGB格式而Hunyuan需要RGBA格式的BUG。
+- [DONE] 测试先生成Mesh，再通过UE上面的按钮编辑Mesh的完整流程。
+- [TO-DO] 录视频展示Mesh编辑的流程。
