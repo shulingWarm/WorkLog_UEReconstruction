@@ -46,4 +46,5 @@
 - [DONE] 解决ImgSolver里面的PIL Image无法直接用于模型推理的问题。
 - [DONE] 解决Qwen-Image-Edit需要RGB格式而Hunyuan需要RGBA格式的BUG。
 - [DONE] 测试先生成Mesh，再通过UE上面的按钮编辑Mesh的完整流程。
-- [TO-DO] 录视频展示Mesh编辑的流程。
+- [DOING] 录视频展示Mesh编辑的流程。
+	- [DOING] 临时修改回传时的传输包大小，解决texture传输不完整的问题。
