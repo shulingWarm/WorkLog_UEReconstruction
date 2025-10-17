@@ -22,5 +22,6 @@
 - [DONE] 子任务14 添加在UE里面调用Hunyuan3D的用户界面。
 - [DONE] 子任务15 加速服务端与UE之间的传输速度。
 - [DONE] 子任务16 在UE中集成VGGT.
-- [DOING] 子任务17 在UE中集成QwenImageEdit。
+- [DONE] 子任务17 在UE中集成QwenImageEdit。
 - [DOING] 子任务18 集成Hunyuan3D-Part。
+- [DOING] 子任务19 加速基于nunchaku的Qwen-Image-Edit.
