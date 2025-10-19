@@ -246,3 +246,9 @@
 	- [DONE] 给旋转工具添加视角集中的功能。
 	- [TO-DO] 制作用于操作Mesh分割的控制台界面。
 - [TO-DO] 在UE上测试编辑3D模型的效果。
+
+# 2025/10/19
+- [DONE] 测试3D模型编辑。
+	- 视频演示: https://www.bilibili.com/video/BV1PBWqzxE7v
+- [DOING] 加速Qwen-Image-Edit.
+	- 目的: 加速3DMesh编辑，另外通过此过程理解Qwen-Image-Edit的算法流程。
