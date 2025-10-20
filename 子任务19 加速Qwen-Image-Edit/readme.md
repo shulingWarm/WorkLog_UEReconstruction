@@ -8,4 +8,6 @@
 	- 89%的时间用于transformer block，全局50%的时间用于attention.
 - [DONE] 将nunchaku的attention实现换成flash attention.
 	- 将torch native attention换成flash attention后没有性能提升。
-- [TO-DO] 对nunchaku调用的flash attention做breakdown.
+- [DONE] 为了定位flash-attention的具体实现，源码编译flash attention.
+- [DONE] 在flash-attention源码里面定位实际执行的kernel。
+- [DOING] 解耦flash-attention里面的关键kernel.
