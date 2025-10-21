@@ -12,3 +12,4 @@
 - [DONE] 在flash-attention源码里面定位实际执行的kernel。
 - [DOING] 解耦flash-attention里面的关键kernel.
 	- [DONE] 令解耦的flash-attention链接pytorch.
+	- [DOING] 参考原本的flash-attention的头文件，在解耦的flash-attention中引用。
