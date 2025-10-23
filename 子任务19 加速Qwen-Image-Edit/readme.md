@@ -12,4 +12,6 @@
 - [DONE] 在flash-attention源码里面定位实际执行的kernel。
 - [DOING] 解耦flash-attention里面的关键kernel.
 	- [DONE] 令解耦的flash-attention链接pytorch.
-	- [DOING] 参考原本的flash-attention的头文件，在解耦的flash-attention中引用。
+	- [DONE] 参考原本的flash-attention的头文件，在解耦的flash-attention中引用。
+	- [DONE] 引用flash attention的核函数，仅带头文件编译完成。
+	- [DOING] 解决带实际调用核函数时编译检查报错的问题。
