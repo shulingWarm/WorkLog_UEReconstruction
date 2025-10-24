@@ -15,4 +15,5 @@
 	- [DONE] 参考原本的flash-attention的头文件，在解耦的flash-attention中引用。
 	- [DONE] 引用flash attention的核函数，仅带头文件编译完成。
 	- [DONE] 解决带实际调用核函数时编译检查报错的问题。
-- [DOING] Dump调用Qwen-Image-Edit时产生的实际attention输入数据，用于测试解耦kernel。
+- [DONE] Dump调用Qwen-Image-Edit时产生的实际attention输入数据，用于测试解耦kernel。
+- [DONE] 根据运行Qwen-Image-Edit记录的attention数据数据，在解耦kernel里面执行测试。
