@@ -17,3 +17,5 @@
 	- [DONE] 解决带实际调用核函数时编译检查报错的问题。
 - [DONE] Dump调用Qwen-Image-Edit时产生的实际attention输入数据，用于测试解耦kernel。
 - [DONE] 根据运行Qwen-Image-Edit记录的attention数据数据，在解耦kernel里面执行测试。
+- [DONE] 移植flash-attention仓库里面初始化param的过程。
+- [DOING] 解决执行过程中产生非法内存访问导致程序异常结束的问题。
