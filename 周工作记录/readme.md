@@ -252,3 +252,12 @@
 	- 视频演示: https://www.bilibili.com/video/BV1PBWqzxE7v
 - [DOING] 加速Qwen-Image-Edit.
 	- 目的: 加速3DMesh编辑，另外通过此过程理解Qwen-Image-Edit的算法流程。
+
+# 2025/10/26
+- [DOING] 加速Qwen-Image-Edit.
+	- [DONE] 定位Qwen-Image-Edit中最耗时的部分是attention计算。
+	- [DONE] 将Qwen-Image-Edit里面的torch_native_attention替换成flash-attention之后没有明显加速效果。
+	- [DONE] 定位flash-attention中实际被执行的核函数。
+	- [DOING] 解耦flash-attention中的关键核函数。
+		- [DONE] 将必要逻辑解耦出来后编译成功。
+		- [DOING] 解决执行过程中产生非法内存方法导致程序异常退出。
