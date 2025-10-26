@@ -18,4 +18,9 @@
 - [DONE] Dump调用Qwen-Image-Edit时产生的实际attention输入数据，用于测试解耦kernel。
 - [DONE] 根据运行Qwen-Image-Edit记录的attention数据数据，在解耦kernel里面执行测试。
 - [DONE] 移植flash-attention仓库里面初始化param的过程。
-- [DOING] 解决执行过程中产生非法内存访问导致程序异常结束的问题。
+- [DONE] 解决执行过程中产生非法内存访问导致程序异常结束的问题。
+	- 需要将参数结构体中未使用到的指针明确指定成空指针。
+- [DONE] 测试attention kernel内部不同阶段的占比。
+	- 占比最多的是写入输出数据的操作，cute::copy，在kernel内占大概50%.
+- [DONE] 定位flash-attention中的cute::copy的实现。
+- [TO-DO] 写一个独立的kernel测试cute::copy，主要用于理解这个函数的输入输出形式。
