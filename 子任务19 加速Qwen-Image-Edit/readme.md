@@ -28,5 +28,7 @@
 	- [DONE] 创建用于执行cute::copy的复制逻辑。
 	- [DONE] 调用cute::copy。
 	- 实现了对长度为8的简单向量的单线程复制并验证复制结果。
-- [TO-DO] 追溯flash-attention里面调用的cute::copy实际执行复制逻辑的最底层代码。
+- [DONE] 追溯flash-attention里面调用的cute::copy实际执行复制逻辑的最底层代码。
+- [TO-DO] 追溯执行复制的Tensor底层指针存储的位置。
+- [TO-DO] 测试用Tensor底层的指针直接执行复制的效果。
 - [TO-DO] 测试调用cute::copy进行多线程并行的复杂复制逻辑。
