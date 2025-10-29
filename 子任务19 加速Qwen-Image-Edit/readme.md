@@ -23,7 +23,10 @@
 - [DONE] 测试attention kernel内部不同阶段的占比。
 	- 占比最多的是写入输出数据的操作，cute::copy，在kernel内占大概50%.
 - [DONE] 定位flash-attention中的cute::copy的实现。
-- [DOING] 写一个独立的kernel测试cute::copy，主要用于理解这个函数的输入输出形式。
+- [DONE] 写一个独立的kernel测试cute::copy，主要用于理解这个函数的输入输出形式。
 	- [DONE] 调用make_tensor由外部指针创建一个tensor.
-	- [TO-DO] 创建用于执行cute::copy的复制逻辑。
-	- [TO-DO] 调用cute::copy。
+	- [DONE] 创建用于执行cute::copy的复制逻辑。
+	- [DONE] 调用cute::copy。
+	- 实现了对长度为8的简单向量的单线程复制并验证复制结果。
+- [TO-DO] 追溯flash-attention里面调用的cute::copy实际执行复制逻辑的最底层代码。
+- [TO-DO] 测试调用cute::copy进行多线程并行的复杂复制逻辑。
