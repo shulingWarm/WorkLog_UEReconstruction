@@ -72,3 +72,13 @@
 	- 演示视频: https://www.bilibili.com/video/BV1Rrp3zYEtE
 - [DONE] 在服务器上部署Qwen-Image-Edit。
 - [DOING] 在UE上实现调用Qwen-Image-Edit的接口。
+
+# 10月
+- [DONE] 给UE的旋转工具添加了切换视角的功能，当旋转某个物体时，自动切换到以这个物体为中心的视角。
+- [DONE] 在UE上实现调用Qwen-Image-Edit的接口。
+	- 演示视频: https://www.bilibili.com/video/BV1PBWqzxE7v
+- [DOING] 加速Qwen-Image-Edit。
+	- [DONE] 确认flash-attention占整个推理过程的40%，可以认为是优先优化目标。
+	- [DONE] 从flash-attention中解耦出核心的核函数，方便快速编译验证修改效果。
+	- [DOING] 理解flash-attention的实现逻辑。
+	- [TO-DO] 设计flash-attention的加速方案。
