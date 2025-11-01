@@ -4,3 +4,5 @@
 
 # 工作过程
 - [DOING] 确认sO和tOsO这两个Tensor的数据关系。
+	- [DONE] 确认sO的shape是128x128
+	- [TO-DO] 确认tOsO与sO的位置关系。
