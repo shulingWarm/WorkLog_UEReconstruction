@@ -261,3 +261,9 @@
 	- [DOING] 解耦flash-attention中的关键核函数。
 		- [DONE] 将必要逻辑解耦出来后编译成功。
 		- [DOING] 解决执行过程中产生非法内存方法导致程序异常退出。
+
+# 2025/11/2
+- [DOING] 加速Qwen-Image-Edit
+	- [DONE] 解耦flash-attention中的关键核函数。
+	- [DONE] 确认flash-attention中最耗时的部分为复制output数据的cute::copy
+	- [DOING] 研究确认参与cute::copy复制的数据来源。
