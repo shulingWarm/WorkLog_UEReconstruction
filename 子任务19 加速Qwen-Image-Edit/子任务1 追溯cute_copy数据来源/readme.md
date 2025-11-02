@@ -5,4 +5,5 @@
 # 工作过程
 - [DOING] 确认sO和tOsO这两个Tensor的数据关系。
 	- [DONE] 确认sO的shape是128x128
+	- [DONE] 根据文档确定((2,3),(1,4))和(6,4)这两种shape的表达方法是等价的。
 	- [TO-DO] 确认tOsO与sO的位置关系。
