@@ -3,7 +3,10 @@
 - 确认数据来源后，就可以考虑用内联汇编复制或者把复制操作嵌入到计算过程中。
 
 # 工作过程
-- [DOING] 确认sO和tOsO这两个Tensor的数据关系。
+- [DONE] 确认sO和tOsO这两个Tensor的数据关系。
 	- [DONE] 确认sO的shape是128x128
 	- [DONE] 根据文档确定((2,3),(1,4))和(6,4)这两种shape的表达方法是等价的。
-	- [TO-DO] 确认tOsO与sO的位置关系。
+	- [DONE] 确认tOsO与sO的位置关系。
+	- tOsO是sO的一行
+- [DOING] 基于TiledCopy写一个示例。
+	- 目的: 因为cute::copy调用的是TiledCopy，为了充分理解这个过程，写一个TiledCopy的示例。
