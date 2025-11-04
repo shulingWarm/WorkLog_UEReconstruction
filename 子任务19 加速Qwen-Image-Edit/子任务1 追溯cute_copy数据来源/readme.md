@@ -11,5 +11,6 @@
 - [DOING] 基于TiledCopy写一个示例。
 	- 目的: 因为cute::copy调用的是TiledCopy，为了充分理解这个过程，写一个TiledCopy的示例。
 	- [DONE] 确认TiledCopy的TV_layout每个参数的意义，用于确定第t个线程的第v个数据的offset.
-	- [DONE] TilesShape是每个线程负责的意义复制切片在二维数据上的大小。
+	- [DONE] 发现TiledCopy里面提供了获取MN_layout的接口。
+	- [TO-DO] 通过改变原始的TiledCopy模板类，观察MN_layout和TV_layout的变化。
 	- [TO-DO] 开发一个Tensor复制Kernel用于验证对于TiledCopy的理解。
