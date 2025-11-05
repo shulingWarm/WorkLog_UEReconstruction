@@ -12,5 +12,7 @@
 	- 目的: 因为cute::copy调用的是TiledCopy，为了充分理解这个过程，写一个TiledCopy的示例。
 	- [DONE] 确认TiledCopy的TV_layout每个参数的意义，用于确定第t个线程的第v个数据的offset.
 	- [DONE] 发现TiledCopy里面提供了获取MN_layout的接口。
-	- [TO-DO] 通过改变原始的TiledCopy模板类，观察MN_layout和TV_layout的变化。
-	- [TO-DO] 开发一个Tensor复制Kernel用于验证对于TiledCopy的理解。
+	- [DONE] 通过改变原始的TiledCopy模板类，观察MN_layout和TV_layout的变化。
+		- 确定了MN和TV两个layout与TiledCopy里面参数的计算关系。
+	- [DONE] 测试用TV_layout只指定部分Tensor执行复制，结果执行cute::copy时仍然复制了完整的tensor.
+	- [TO-DO] 测试用TiledCopy执行单独线程切片的复制。
