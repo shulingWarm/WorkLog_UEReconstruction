@@ -15,4 +15,5 @@
 	- [DONE] 通过改变原始的TiledCopy模板类，观察MN_layout和TV_layout的变化。
 		- 确定了MN和TV两个layout与TiledCopy里面参数的计算关系。
 	- [DONE] 测试用TV_layout只指定部分Tensor执行复制，结果执行cute::copy时仍然复制了完整的tensor.
+	- [DONE] TiledCopy声明里面最后一个二元元组表示的可能是对tensor分出来的切片数量，传入不同的tensor会分出来不同的切片大小，需要进一步确认。
 	- [TO-DO] 测试用TiledCopy执行单独线程切片的复制。
