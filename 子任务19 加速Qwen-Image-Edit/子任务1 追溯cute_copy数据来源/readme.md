@@ -19,3 +19,5 @@
 	- [DONE] 测试用TiledCopy执行单独线程切片的复制。
 		- 复制128\*128的Tensor，确认了每个模板参数对于复制效果的影响。
 - [DOING] 画Flash-Attention在Tensor级别的pipeline.
+	- [DONE] 解析Query和Key的shape变换。
+	- [DOING] 理解shared_memory排列时引入的Swizzle机制。
