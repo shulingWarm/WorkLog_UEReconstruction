@@ -267,3 +267,9 @@
 	- [DONE] 解耦flash-attention中的关键核函数。
 	- [DONE] 确认flash-attention中最耗时的部分为复制output数据的cute::copy
 	- [DOING] 研究确认参与cute::copy复制的数据来源。
+
+# 2025/11/9
+- [DOING] 加速Qwen-Image-Edit
+	- [DONE] 确认参与cute::copy复制的数据来源。
+	- [DONE] 写tiled_copy的示例用于理解flash-attention流程。
+	- [DOING] 画flash-attention流程用于全局分析。
