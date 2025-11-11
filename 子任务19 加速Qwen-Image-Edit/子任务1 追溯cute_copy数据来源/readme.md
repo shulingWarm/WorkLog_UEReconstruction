@@ -23,5 +23,7 @@
 	- [DONE] 理解shared_memory排列时引入的Swizzle机制。
 		- 通过行列标号的异或操作获取新的偏移量从而把bank id散列开。
 	- [DONE] 分析了tQgQ和原始的指针位置的对应关系。
-	- [DOING] 分析sQ和原始指针偏移量的对应关系。
+	- [DONE] 实现了检测bit交换映射的函数用于分析sQ和原始指针偏移量的关系。
+	- [DONE] 分析sQ和原始指针偏移量的对应关系。
+	- [DOING] 分析带swizzle的逻辑id和指针偏移量的对应关系。
 	- [TO-DO] 分析tQsQ和原始指针的位置关系。
