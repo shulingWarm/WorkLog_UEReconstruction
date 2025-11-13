@@ -18,7 +18,7 @@
 	- [DONE] TiledCopy声明里面最后一个二元元组表示的可能是对tensor分出来的切片数量，传入不同的tensor会分出来不同的切片大小，需要进一步确认。
 	- [DONE] 测试用TiledCopy执行单独线程切片的复制。
 		- 复制128\*128的Tensor，确认了每个模板参数对于复制效果的影响。
-- [DOING] 画Flash-Attention在Tensor级别的pipeline.
+- [GIVE-UP] 画Flash-Attention在Tensor级别的pipeline.
 	- [DONE] 解析Query和Key的shape变换。
 	- [DONE] 理解shared_memory排列时引入的Swizzle机制。
 		- 通过行列标号的异或操作获取新的偏移量从而把bank id散列开。
@@ -30,3 +30,6 @@
 	- [DONE] 分析tQsQ和原始指针的位置关系。
 	- [DOING] 用类似于Python的伪代码表示Q\*K^T过程中的数据流动。
 	- [TO-DO] 画Kernel里面Q\*K^T过程的数据流图。
+
+# 放弃原因
+- 画flash-attention的数据流动与优化flash-attention性能的基本动机并不一致。
