@@ -35,3 +35,5 @@
 	- 直接执行复制的速度在1000次执行attention后，时间从81xx降低到了80xx.
 - [GIVE-UP] 子任务1 追溯cute::copy涉及到的数据来源
 - [DOING] 验证执行复制output的cute::copy时候是否存在bank冲突。
+	- [DONE] 验证发现每个线程从sO中取出的切片不能覆盖sO的所有数据。
+	- [DOING] Debug研究sO切片的复制是有错误还是确实不需要完整复制。
