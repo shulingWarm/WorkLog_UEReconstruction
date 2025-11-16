@@ -273,3 +273,9 @@
 	- [DONE] 确认参与cute::copy复制的数据来源。
 	- [DONE] 写tiled_copy的示例用于理解flash-attention流程。
 	- [DOING] 画flash-attention流程用于全局分析。
+
+# 2025/11/16
+- [DOING] 加速Qwen-Image-Edit
+	- [DONE] 确认了QK^T计算时的数据组织方式。
+	- [DONE] 确认了相对耗时的cute::copy中最耗时的cute::copy存在bank冲突。
+	- [DOING] 将cute::copy的过程改成没有bank冲突的模式。
