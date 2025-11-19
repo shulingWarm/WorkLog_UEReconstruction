@@ -43,4 +43,6 @@
 	- [DONE] 准备每个线程用于存储local数据的头指针。
 	- [DONE] 准备每个线程用于执行复制时在共享内存上的偏移量。
 	- 验证发现cute::copy并不耗时，profile发现耗时是因为它用到了GEMM的计算结果。
-- [DOING] 按照计算块重复的方式验证flash-attention里面最耗时的部分。
+- [DONE] 按照计算块重复的方式验证flash-attention里面最耗时的部分。
+	- gemm_rs占用了flash-attention里面一半的时间。
+- [DOING] 定位gemm_rs里面底层被执行的计算指令。
