@@ -45,7 +45,9 @@
 	- 验证发现cute::copy并不耗时，profile发现耗时是因为它用到了GEMM的计算结果。
 - [DONE] 按照计算块重复的方式验证flash-attention里面最耗时的部分。
 	- gemm_rs占用了flash-attention里面一半的时间。
-- [DOING] 定位gemm_rs里面底层被执行的计算指令。
+- [DONE] 定位gemm_rs里面底层被执行的计算指令。
 	- [DONE] 由于gemm执行层涉及多个if constexpr判断，需要根据tensor判断使用的是哪个分支。
 		- 走的是rank为3,2,2,3里面的最后一个分支。
-	- [DOING] 寻找if constexpr分支确定后，更深一层的gemm实现。
+	- [DONE] 寻找if constexpr分支确定后，更深一层的gemm实现。
+	- [DONE] 最终定位到的底层gemm指令是 mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32。
+- [DOING] 寻找是否存在更合适的gemm指令。
