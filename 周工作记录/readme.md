@@ -279,3 +279,10 @@
 	- [DONE] 确认了QK^T计算时的数据组织方式。
 	- [DONE] 确认了相对耗时的cute::copy中最耗时的cute::copy存在bank冲突。
 	- [DOING] 将cute::copy的过程改成没有bank冲突的模式。
+
+# 2025/11/23
+- [DOING] 加速Qwen-Image-Edit
+	- [DONE] 发现cute::copy并不是flash-attention kernel的性能瓶颈。
+		- 之前的显现出cute::copy耗时间是因为它需要用到计算结果，而计算结果的时间会算在这里面。
+	- [DONE] 定位到gemm的device函数的底层PTX指令是 mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32
+	- [DOING] 用底层PTX指令实现示例矩阵相乘。
