@@ -50,4 +50,5 @@
 		- 走的是rank为3,2,2,3里面的最后一个分支。
 	- [DONE] 寻找if constexpr分支确定后，更深一层的gemm实现。
 	- [DONE] 最终定位到的底层gemm指令是 mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32。
-- [DOING] 寻找是否存在更合适的gemm指令。
+- [DOING] 用flash-attention里面用到的gemm指令写矩阵乘法示例。
+- [TO-DO] 寻找是否存在更合适的gemm指令。
