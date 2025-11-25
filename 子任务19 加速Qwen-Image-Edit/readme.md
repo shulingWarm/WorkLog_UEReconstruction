@@ -51,5 +51,8 @@
 	- [DONE] 寻找if constexpr分支确定后，更深一层的gemm实现。
 	- [DONE] 最终定位到的底层gemm指令是 mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32。
 - [DONE] 用flash-attention里面用到的gemm指令写矩阵乘法示例。
-- [DOING] 研究flash-attention里面怎样处理softmax来节省global memory的访问。
-- [TO-DO] 研究flash-attention里面三个内存层之间的访问次数和访问量，寻找优化IO的可能性。
+- [DONE] 研究flash-attention里面怎样处理softmax来节省global memory的访问。
+	- Softmax仍然需要处理所有的value tensor，只是节省了分离kernel里面对global memory的访问。
+- [DONE] 研究flash-attention里面三个内存层之间的访问次数和访问量，寻找优化IO的可能性。
+	- Breakdown发现flash-attention里面访问global memory并没有花费很多时间，屏蔽掉读取global memory之后时间从8100降到了7900.
+- [TO-DO] 研究cutlass封装的GEMM和底层的ptx指令之间的调用栈所花费的时间。
