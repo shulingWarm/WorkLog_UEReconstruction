@@ -55,4 +55,5 @@
 	- Softmax仍然需要处理所有的value tensor，只是节省了分离kernel里面对global memory的访问。
 - [DONE] 研究flash-attention里面三个内存层之间的访问次数和访问量，寻找优化IO的可能性。
 	- Breakdown发现flash-attention里面访问global memory并没有花费很多时间，屏蔽掉读取global memory之后时间从8100降到了7900.
-- [TO-DO] 研究cutlass封装的GEMM和底层的ptx指令之间的调用栈所花费的时间。
+- [DOING] 研究cutlass封装的GEMM和底层的ptx指令之间的调用栈所花费的时间。
+	- [DONE] 把asm指令调用栈上的每一步函数都独立出来，方便debug修改。
