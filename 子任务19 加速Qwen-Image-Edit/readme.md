@@ -59,4 +59,6 @@
 	- [DONE] 把asm指令调用栈上的每一步函数都独立出来，方便debug修改。
 	- [DONE] cutlass封装的asm指令调用栈不会引入overhead，可以忽略。
 - [DONE] 调研发现flash-attention里面虽然完整读取了所有的value tensor，但softmax并不是读取完再算的，而是每读取一个切片都会算一次softmax.
-- [TO-DO] 研究读取key-value切片的时候处理softmax的方法。 
+- [DONE] 研究读取key-value切片的时候处理softmax的方法。 
+	- 通过更新softmax的scale分段计算softmax。
+- [TO-DO] 研究专属于diffusion模型的attention加速方法。
