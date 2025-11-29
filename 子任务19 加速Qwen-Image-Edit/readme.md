@@ -61,4 +61,6 @@
 - [DONE] 调研发现flash-attention里面虽然完整读取了所有的value tensor，但softmax并不是读取完再算的，而是每读取一个切片都会算一次softmax.
 - [DONE] 研究读取key-value切片的时候处理softmax的方法。 
 	- 通过更新softmax的scale分段计算softmax。
-- [TO-DO] 研究专属于diffusion模型的attention加速方法。
+- [DOING] 研究专属于diffusion模型的attention加速方法。
+	- [DONE] 研究GRAT算法，结论是GRAT算法不够灵活，每次只取固定位置的token做attention计算。
+	- [TO-DO] 研究sglang-diffusion里面对diffusion模型的优化点，并评估能否和nunchaku里面的量化方法融合。
