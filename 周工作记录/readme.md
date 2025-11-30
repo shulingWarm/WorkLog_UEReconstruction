@@ -286,3 +286,9 @@
 		- 之前的显现出cute::copy耗时间是因为它需要用到计算结果，而计算结果的时间会算在这里面。
 	- [DONE] 定位到gemm的device函数的底层PTX指令是 mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32
 	- [DOING] 用底层PTX指令实现示例矩阵相乘。
+
+# 2025/11/30
+- [DOING] 加速Qwen-Image-Edit
+	- [DONE] 用底层PTX指令实现示例矩阵的相乘。
+	- [DONE] 调研flash-attention主循环里面分块累积计算softmax的方法。
+	- [DOING] 比较不同MMA大小的PTX指令在计算效率上的区别，用于验证加速flash-attention的可行性。
