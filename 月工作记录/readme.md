@@ -82,3 +82,10 @@
 	- [DONE] 从flash-attention中解耦出核心的核函数，方便快速编译验证修改效果。
 	- [DOING] 理解flash-attention的实现逻辑。
 	- [TO-DO] 设计flash-attention的加速方案。
+
+# 11月
+- [DOING] 加速Qwen-Image-Edit。
+	- [DONE] 理解flash-attention的实现逻辑。
+	- [DONE] 理解flash-attention中用到的cute::copy涉及到的Tensor和Layout等概念。
+	- [DONE] 实现基本的mma指令测试，并按照文档中提到的layout分配不同线程取的数据块。
+	- [DOING] 测试不同大小的mma指令的性能差异。
