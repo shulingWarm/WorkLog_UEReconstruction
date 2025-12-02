@@ -63,6 +63,7 @@
 	- 通过更新softmax的scale分段计算softmax。
 - [DOING] 验证不同大小的Tensor Core MMA指令的性能差异。
 	- [DONE] 实现用于测试不同大小的MMA的数据准备过程。
+	- [DONE] 实现用于测试ld.global的asm代码。
 	- [DOING] 测试ld.global使用效果，用于把global memory加载到寄存器。
 	- [TO-DO] 实现kernel中从global memory复制到shared memory的过程。
 - [TO-DO] 研究专属于diffusion模型的attention加速方法。
