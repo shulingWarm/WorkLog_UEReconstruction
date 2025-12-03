@@ -64,8 +64,8 @@
 - [DOING] 验证不同大小的Tensor Core MMA指令的性能差异。
 	- [DONE] 实现用于测试不同大小的MMA的数据准备过程。
 	- [DONE] 实现用于测试ld.global的asm代码。
-	- [DOING] 测试ld.global使用效果，用于把global memory加载到寄存器。
-	- [TO-DO] 实现kernel中从global memory复制到shared memory的过程。
+	- [DONE] 测试ld.global使用效果，用于把global memory加载到寄存器。
+	- [DOING] 为了快速比较性能差异，直接用随机初始化的寄存器来进行mma计算。
 - [TO-DO] 研究专属于diffusion模型的attention加速方法。
 	- [DONE] 研究GRAT算法，结论是GRAT算法不够灵活，每次只取固定位置的token做attention计算。
 	- [TO-DO] 研究sglang-diffusion里面对diffusion模型的优化点，并评估能否和nunchaku里面的量化方法融合。
