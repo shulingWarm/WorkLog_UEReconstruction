@@ -61,11 +61,12 @@
 - [DONE] 调研发现flash-attention里面虽然完整读取了所有的value tensor，但softmax并不是读取完再算的，而是每读取一个切片都会算一次softmax.
 - [DONE] 研究读取key-value切片的时候处理softmax的方法。 
 	- 通过更新softmax的scale分段计算softmax。
-- [DOING] 验证不同大小的Tensor Core MMA指令的性能差异。
+- [DONE] 验证不同大小的Tensor Core MMA指令的性能差异。
 	- [DONE] 实现用于测试不同大小的MMA的数据准备过程。
 	- [DONE] 实现用于测试ld.global的asm代码。
 	- [DONE] 测试ld.global使用效果，用于把global memory加载到寄存器。
-	- [DOING] 为了快速比较性能差异，直接用随机初始化的寄存器来进行mma计算。
+	- [DONE] 为了快速比较性能差异，直接用随机初始化的寄存器来进行mma计算。
+		- 验证发现sm89架构下，最大支持的shape就已经是m16n8k16了.
 - [TO-DO] 研究专属于diffusion模型的attention加速方法。
 	- [DONE] 研究GRAT算法，结论是GRAT算法不够灵活，每次只取固定位置的token做attention计算。
 	- [TO-DO] 研究sglang-diffusion里面对diffusion模型的优化点，并评估能否和nunchaku里面的量化方法融合。
