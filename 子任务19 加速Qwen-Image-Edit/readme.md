@@ -67,6 +67,8 @@
 	- [DONE] 测试ld.global使用效果，用于把global memory加载到寄存器。
 	- [DONE] 为了快速比较性能差异，直接用随机初始化的寄存器来进行mma计算。
 		- 验证发现sm89架构下，最大支持的shape就已经是m16n8k16了.
+- [DONE] 用Nsight Compute发现当前的kernel存在寄存器过度使用的情况，导致计算效率较低。
+- [TO-DO] 基于Nsight Compute分析结果，寻找进一步加速的方法。
 - [TO-DO] 研究专属于diffusion模型的attention加速方法。
 	- [DONE] 研究GRAT算法，结论是GRAT算法不够灵活，每次只取固定位置的token做attention计算。
 	- [TO-DO] 研究sglang-diffusion里面对diffusion模型的优化点，并评估能否和nunchaku里面的量化方法融合。
