@@ -292,3 +292,11 @@
 	- [DONE] 用底层PTX指令实现示例矩阵的相乘。
 	- [DONE] 调研flash-attention主循环里面分块累积计算softmax的方法。
 	- [DOING] 比较不同MMA大小的PTX指令在计算效率上的区别，用于验证加速flash-attention的可行性。
+
+# 2025/12/7
+- [DOING] 加速Qwen-Image-Edit
+	- [DONE] 比较不同MMA大小的PTX指令在计算效率上的区别，用于验证加速flash-attention的可行性。
+		- m16n8k16已经是sm_89架构上支持的最大的mma切片了。
+	- [DONE] 用Nsight-Compute测试flash-attention kernel。
+		- 验证发现flash-attention kernel使用了过多的寄存器，导致无法同时运行多个warp，应该减少寄存器使用。
+	- [DOING] 研究flash-attention的寄存器使用分布。
