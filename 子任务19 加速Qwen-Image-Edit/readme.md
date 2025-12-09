@@ -73,7 +73,8 @@
 	- [DOING] 分析flash-attention的改革方案。
 		- [DONE] 分析flash-attention里面寄存器使用的构成。
 			- 用于参与GEMM运算的寄存器占据了大部分寄存器。
-		- [TO-DO] 研究flash-attention中什么因素导致了它选择这个寄存器。
+		- [DOING] 研究flash-attention中什么因素导致了它选择这个寄存器。
+			- 恢复nunchaku的工作流程。
 - [TO-DO] 研究专属于diffusion模型的attention加速方法。
 	- [DONE] 研究GRAT算法，结论是GRAT算法不够灵活，每次只取固定位置的token做attention计算。
 	- [TO-DO] 研究sglang-diffusion里面对diffusion模型的优化点，并评估能否和nunchaku里面的量化方法融合。
