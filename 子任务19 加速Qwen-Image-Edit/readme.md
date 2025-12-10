@@ -68,13 +68,15 @@
 	- [DONE] 为了快速比较性能差异，直接用随机初始化的寄存器来进行mma计算。
 		- 验证发现sm89架构下，最大支持的shape就已经是m16n8k16了.
 - [DONE] 用Nsight Compute发现当前的kernel存在寄存器过度使用的情况，导致计算效率较低。
-- [DONE] 基于Nsight Compute分析结果，寻找进一步加速的方法。
+- [DOING] 基于Nsight Compute分析结果，寻找进一步加速的方法。
 	- [DONE] 实现充分使用fma，纯粹进行计算的kernel，用于验证性能上限。
 	- [DOING] 分析flash-attention的改革方案。
 		- [DONE] 分析flash-attention里面寄存器使用的构成。
 			- 用于参与GEMM运算的寄存器占据了大部分寄存器。
 		- [DOING] 研究flash-attention中什么因素导致了它选择这个寄存器。
-			- 恢复nunchaku的工作流程。
+			- [DONE] 恢复nunchaku的工作流程。
+			- [DONE] 验证发现flash-attention过程中的tensor是由Kernel_Traits里面的tiled_mma决定的。
+			- [DOING] 测试不同参数的Kernel_Traits对Tensor形状的影响。
 - [TO-DO] 研究专属于diffusion模型的attention加速方法。
 	- [DONE] 研究GRAT算法，结论是GRAT算法不够灵活，每次只取固定位置的token做attention计算。
 	- [TO-DO] 研究sglang-diffusion里面对diffusion模型的优化点，并评估能否和nunchaku里面的量化方法融合。
