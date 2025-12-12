@@ -77,6 +77,8 @@
 			- [DONE] 恢复nunchaku的工作流程。
 			- [DONE] 验证发现flash-attention过程中的tensor是由Kernel_Traits里面的tiled_mma决定的。
 			- [DOING] 测试不同参数的Kernel_Traits对Tensor形状的影响。
+				- [DONE] 准备基本的Kernel_Traits开发代码。
+				- [TO-DO] 测试更改参数后的效果。
 - [TO-DO] 研究专属于diffusion模型的attention加速方法。
 	- [DONE] 研究GRAT算法，结论是GRAT算法不够灵活，每次只取固定位置的token做attention计算。
 	- [TO-DO] 研究sglang-diffusion里面对diffusion模型的优化点，并评估能否和nunchaku里面的量化方法融合。
