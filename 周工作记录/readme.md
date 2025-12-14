@@ -300,3 +300,10 @@
 	- [DONE] 用Nsight-Compute测试flash-attention kernel。
 		- 验证发现flash-attention kernel使用了过多的寄存器，导致无法同时运行多个warp，应该减少寄存器使用。
 	- [DOING] 研究flash-attention的寄存器使用分布。
+
+# 2025/12/14
+- [DOING] 加速Qwen-Image-Edit
+	- [DONE] 研究flash-attention的寄存器使用分布。
+		- flash-attention-v2的主要寄存器开销在于调用Tensor Core时的矩阵寄存器。
+	- [DONE] 写demo验证了一个线程使用过多寄存器时确实会使性能下降。
+	- [TO-DO] 手搓寄存器开销较小的flash-attention.
