@@ -83,7 +83,7 @@
 		- [DONE] 对比相同计算过程但使用较多寄存器的情况下确实会降低性能。
 			- 验证线程内使用过多的寄存器确实会降低kernel性能，应该把寄存器使用量保持在适中水平。
 		- 最终确定需要手动实现flash-attention并控制寄存器使用量。
-- [TO-DO] 设计query的小切片只加载一次的方案。
+- [DOING] 子任务2 手动实现寄存器使用量较小的flash-attention。
 - [TO-DO] 研究专属于diffusion模型的attention加速方法。
 	- [DONE] 研究GRAT算法，结论是GRAT算法不够灵活，每次只取固定位置的token做attention计算。
 	- [TO-DO] 研究sglang-diffusion里面对diffusion模型的优化点，并评估能否和nunchaku里面的量化方法融合。
