@@ -2,5 +2,6 @@
 - 重新使用寄存器使用较小的flash-attention.
 
 # 工作过程
-- [DOING] 准备用于测试flash-attention的输入数据。
-- [TO-DO] 准备执行flash-attention计算过程的寄存器。
+- [DONE] 准备用于测试flash-attention的输入数据。
+- [DONE] 准备执行flash-attention计算过程的寄存器。
+- [DOING] 准备把query复制到共享内存过程中，先把全局内存的query复制到寄存器中。
