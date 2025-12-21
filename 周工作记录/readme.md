@@ -307,3 +307,9 @@
 		- flash-attention-v2的主要寄存器开销在于调用Tensor Core时的矩阵寄存器。
 	- [DONE] 写demo验证了一个线程使用过多寄存器时确实会使性能下降。
 	- [TO-DO] 手搓寄存器开销较小的flash-attention.
+
+# 2025/12/21
+- [DOING] 加速Qwen-Image-Edit
+	- [DOING] 手搓寄存器开销较小的flash-attention.
+		- [DONE] 划分用于计算的寄存器和共享内存。
+		- [DOING] 设计无bank冲突的query读写策略。
