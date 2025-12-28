@@ -313,3 +313,10 @@
 	- [DOING] 手搓寄存器开销较小的flash-attention.
 		- [DONE] 划分用于计算的寄存器和共享内存。
 		- [DOING] 设计无bank冲突的query读写策略。
+
+# 2025/12/28
+- [DOING] 加速Qwen-Image-Edit
+	- [DOING] 手搓寄存器开销较小的flash-attention.
+		- [DONE] 设计无bank冲突的query的读写策略。
+		- [DONE] 验证query读写过程的寄存器内容符合预期。
+		- [DOING] 解决query验证共享内存写入结果时出现段错误。
