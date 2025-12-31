@@ -89,3 +89,13 @@
 	- [DONE] 理解flash-attention中用到的cute::copy涉及到的Tensor和Layout等概念。
 	- [DONE] 实现基本的mma指令测试，并按照文档中提到的layout分配不同线程取的数据块。
 	- [DOING] 测试不同大小的mma指令的性能差异。
+
+# 12月
+- [DOING] 加速Qwen-Image-Edit。
+	- [DONE] 验证发现flash-attention使用的已经是最大的形状的mma指令。
+	- [DONE] 基于Nsight-Compute的profile结果发现原有的实现使用了过多寄存器导致kernel的occupancy过低。
+	- [DONE] 写demo验证了使用过多寄存器会导致kernel的Flops/s下降。
+	- [DOING] 手搓寄存器使用率较低的flash-attention.
+		- [DONE] 设计只使用较少寄存器的flash-attention的分配方案。
+		- [DONE] 实现将query从全局内存加载到寄存器再加载到共享内存，并重排至适合mma指令的layout.
+		- [TO-DO] 实现将key矩阵从全局内存加载到寄存器再加载到共享内存。
