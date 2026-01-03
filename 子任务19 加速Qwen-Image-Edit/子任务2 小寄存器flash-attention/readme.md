@@ -32,6 +32,8 @@
 - [DONE] 设计key tensor从全局内存加载到共享内存的方案。
 - [DONE] 开发key tensor从全局内存加载到共享内存的方案。
 - [DOING] 验证存储key tensor的共享内存内容符合预期。
+	- [DONE] 验证发现key tensor的打印内容全是零。
+	- [DOING] 寻找key tensor访问越界的地方。
 - [TO-DO] 计算qkt之前将数据从共享内存加载到寄存器中用于准备mma计算。
 	- [TO-DO] 根据m16n8k16的计算布局要求，将query从共享内存加载到寄存器。
 - [TO-DO] 修改一次加载K一次加载V的双缓冲机制。
