@@ -51,4 +51,7 @@
 - [DONE] 计算qkt之前将数据从共享内存加载到寄存器中用于准备mma计算。
 	- [DONE] 根据m16n8k16的计算布局要求，将key从共享内存加载到寄存器。
 	- [DONE] 根据m16n8k16的计算布局要求，将query从共享内存加载到寄存器。
-- [DOING] 准备用于存储mma计算的输出矩阵。
+- [DONE] 准备用于存储mma计算的输出矩阵。
+- [DONE] 完成mma计算开发。
+- [DOING] 开发对QK^T结果的softmax操作。
+- [TO-DO] 开发attn_score\*V的过程。
