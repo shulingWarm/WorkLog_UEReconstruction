@@ -54,4 +54,7 @@
 - [DONE] 准备用于存储mma计算的输出矩阵。
 - [DONE] 完成mma计算开发。
 - [DOING] 开发对QK^T结果的softmax操作。
+	- [DONE] 准备增量式计算attention的数学公式。
+	- [DONE] 准备Q\*K^T当前的最大值维护。
+	- [TO-DO] 准备Q\*K^T的当前指数和维护。
 - [TO-DO] 开发attn_score\*V的过程。
