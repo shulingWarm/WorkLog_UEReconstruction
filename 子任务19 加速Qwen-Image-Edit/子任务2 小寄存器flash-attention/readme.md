@@ -56,5 +56,7 @@
 - [DOING] 开发对QK^T结果的softmax操作。
 	- [DONE] 准备增量式计算attention的数学公式。
 	- [DONE] 准备Q\*K^T当前的最大值维护。
+	- [DONE] 确认原版的flash-attention里面使用的也是蝴蝶寻址。
+	- [TO-DO] 在手搓的flash-attention里面用蝴蝶寻址实现维护QK^T的最大值。
 	- [TO-DO] 准备Q\*K^T的当前指数和维护。
 - [TO-DO] 开发attn_score\*V的过程。
