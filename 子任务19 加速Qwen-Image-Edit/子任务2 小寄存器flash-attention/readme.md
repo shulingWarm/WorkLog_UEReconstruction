@@ -60,6 +60,7 @@
 	- [DOING] 在手搓的flash-attention里面用蝴蝶寻址实现维护QK^T的最大值。
 		- [DONE] 确认异或蝴蝶寻址的使用规则。
 		- [DONE] 完成单个线程内的求最大值操作。
-		- [DOING] 使用胡蝶寻址维护跨线程的Q\*K^T最大值。
+		- [DONE] 使用胡蝶寻址维护跨线程的Q\*K^T最大值。
+		- [DOING] 维护QK^T结果的指数和。
 	- [TO-DO] 准备Q\*K^T的当前指数和维护。
 - [TO-DO] 开发attn_score\*V的过程。
