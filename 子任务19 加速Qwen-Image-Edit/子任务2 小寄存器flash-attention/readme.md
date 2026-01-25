@@ -57,15 +57,15 @@
 	- [DONE] 准备增量式计算attention的数学公式。
 	- [DONE] 准备Q\*K^T当前的最大值维护。
 	- [DONE] 确认原版的flash-attention里面使用的也是蝴蝶寻址。
-	- [DOING] 在手搓的flash-attention里面用蝴蝶寻址实现维护QK^T的最大值。
+	- [DONE] 在手搓的flash-attention里面用蝴蝶寻址实现维护QK^T的最大值。
 		- [DONE] 确认异或蝴蝶寻址的使用规则。
 		- [DONE] 完成单个线程内的求最大值操作。
 		- [DONE] 使用胡蝶寻址维护跨线程的Q\*K^T最大值。
-		- [DOING] 由于M,N方向搞反，需要重新维护QK^T的最大值。
+		- [DONE] 由于M,N方向搞反，需要重新维护QK^T的最大值。
 			- [DONE] 确认沿着key方向的4,8,12,...,28的线程号的交换规则。
-			- [TO-DO] 用hard coding的交换规则实现数据交换.
-		- [TO-DO] 维护QK^T结果的指数和。
+			- [DONE] 用hard coding的交换规则实现数据交换.
+		- [DONE] 维护QK^T结果的指数和。
 			- [DONE] 构造QK^T的指数和变量。
-			- [TO-DO] 实现蝴蝶寻址相加的部分。
-	- [TO-DO] 准备Q\*K^T的当前指数和维护。
+			- [DONE] 实现蝴蝶寻址相加的部分。
+	- [DOING] 准备attn_score×V部分的score寄存器。
 - [TO-DO] 开发attn_score\*V的过程。
