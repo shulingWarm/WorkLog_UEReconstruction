@@ -69,5 +69,5 @@
 			- [DONE] 实现蝴蝶寻址相加的部分。
 	- [DONE] 准备attn_score×V部分的score寄存器。
 - [DOING] 开发attn_score\*V的过程。
-	- [DOING] 将value从全局内存加载到共享内存。
+	- [DONE] 将value从全局内存加载到共享内存。
 	- [TO-DO] 将value从共享内存加载到寄存器。
