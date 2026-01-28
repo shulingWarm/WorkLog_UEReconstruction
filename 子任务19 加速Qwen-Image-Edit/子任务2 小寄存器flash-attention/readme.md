@@ -70,4 +70,6 @@
 	- [DONE] 准备attn_score×V部分的score寄存器。
 - [DOING] 开发attn_score\*V的过程。
 	- [DONE] 将value从全局内存加载到共享内存。
-	- [TO-DO] 将value从共享内存加载到寄存器。
+	- [DOING] 将value从共享内存加载到寄存器。
+		- [DOING] 完全按照加载key的方式将共享内存加载到寄存器。
+		- [TO-DO] 为了适配value矩阵的转置需求，手动交换相应的寄存器。
