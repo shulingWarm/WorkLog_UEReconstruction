@@ -68,10 +68,13 @@
 			- [DONE] 构造QK^T的指数和变量。
 			- [DONE] 实现蝴蝶寻址相加的部分。
 	- [DONE] 准备attn_score×V部分的score寄存器。
-- [DOING] 开发attn_score\*V的过程。
+- [DONE] 开发attn_score\*V的过程。
 	- [DONE] 将value从全局内存加载到共享内存。
-	- [DOING] 将value从共享内存加载到寄存器。
+	- [DONE] 将value从共享内存加载到寄存器。
 		- [DONE] 完全按照加载key的方式将共享内存加载到寄存器。
-		- [DOING] 为了适配value矩阵的转置需求，手动交换相应的寄存器。
+		- [DONE] 为了适配value矩阵的转置需求，手动交换相应的寄存器。
 			- [DONE] 定义每个线程取原始数据的寄存器目标。
-			- [TO-DO] 将原始数据复制到临时寄存器中，用于后续复制。
+			- [DONE] 将原始数据复制到临时寄存器中，用于后续复制。
+	- [DONE] 调用PTX指令执行attn_score\*V的计算过程。
+- [TO-DO] 验证Q\*K^T时的第一步计算结果。
+- [TO-DO] 验证Q\*K^T的最终计算结果。
