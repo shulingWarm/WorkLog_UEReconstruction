@@ -25,3 +25,4 @@
 - [DONE] 子任务17 在UE中集成QwenImageEdit。
 - [DOING] 子任务18 集成Hunyuan3D-Part。
 - [DOING] 子任务19 加速基于nunchaku的Qwen-Image-Edit.
+- [DOING] 子任务20 集成效果更好的3DGS。
