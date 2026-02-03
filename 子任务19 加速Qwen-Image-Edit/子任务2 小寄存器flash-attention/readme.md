@@ -78,5 +78,7 @@
 	- [DONE] 调用PTX指令执行attn_score\*V的计算过程。
 - [DONE] 验证Q\*K^T时的第一步计算结果。
 	- [DONE] 导出Q\*K^T第一步的计算结果。
-	- [DOING] 计算在cpu上的QK^T的中间结果，用于和GPU的结果比较。
-- [TO-DO] 验证Q\*K^T的最终计算结果。
+	- [DONE] 计算在cpu上的QK^T的中间结果，用于和GPU的结果比较。
+- [DOING] 验证Q\*K^T的最终计算结果。
+	- [DONE] 比较发现CPU上的计算结果仅部分与GPU计算结果相同，疑似计算结果的偏移量错误。
+	- [DOING] 解决CPU和GPU计算结果不同的问题。
