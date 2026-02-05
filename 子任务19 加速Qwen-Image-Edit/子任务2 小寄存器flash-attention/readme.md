@@ -82,3 +82,4 @@
 - [DOING] 验证Q\*K^T的最终计算结果。
 	- [DONE] 比较发现CPU上的计算结果仅部分与GPU计算结果相同，疑似计算结果的偏移量错误。
 	- [DOING] 解决CPU和GPU计算结果不同的问题。
+		- [DOING] 重置GPU上的debug tensor的layout，用来和cpu的debug排布对齐。
