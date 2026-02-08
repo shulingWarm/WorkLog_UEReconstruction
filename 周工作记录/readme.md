@@ -26,3 +26,11 @@
 		- [DONE] 把softmax的输出结果直接存储到寄存器里面用于attn_score×V
 		- [DONE] 把value从全局内存加载到共享内存。
 		- [DOING] 验证Q\*K^T的计算结果。
+
+# 2026/2/8
+- [DOING] 加速Qwen-Image-Edit.
+	- [DOING] 手搓寄存器开销较小的flash-attention.
+		- [DOING] 验证Q\*K^T的计算结果。
+			- [DONE] 实现CPU版本的Q\*K^T的结果。
+			- [DOING] 重排GPU上的结果，和标准的output排布对齐。
+- [DOING] 部署Map-Anything用于提高3DGS的重建质量。
