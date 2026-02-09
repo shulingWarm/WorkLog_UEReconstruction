@@ -79,9 +79,10 @@
 - [DONE] 验证Q\*K^T时的第一步计算结果。
 	- [DONE] 导出Q\*K^T第一步的计算结果。
 	- [DONE] 计算在cpu上的QK^T的中间结果，用于和GPU的结果比较。
-- [DOING] 验证Q\*K^T的最终计算结果。
+- [DONE] 比较Q\*K^T的第一步计算结果。
 	- [DONE] 比较发现CPU上的计算结果仅部分与GPU计算结果相同，疑似计算结果的偏移量错误。
-	- [DOING] 解决CPU和GPU计算结果不同的问题。
-		- [DOING] 重置GPU上的debug tensor的layout，用来和cpu的debug排布对齐。
+	- [DONE] 解决CPU和GPU计算结果不同的问题。
+		- [DONE] 重置GPU上的debug tensor的layout，用来和cpu的debug排布对齐。
 			- [DONE] 确定tid, vid和rid, cid之间的映射关系。
-			- [TO-DO] 重新比较gpu计算结果和cpu的计算结果。
+			- [DONE] 重新比较gpu计算结果和cpu的计算结果。
+- [DOING] 在CPU上实现导出Q\*K^T的最终计算结果。
