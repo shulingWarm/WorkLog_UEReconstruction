@@ -8,4 +8,6 @@
 	- [DONE] 准备map anything的主模型。
 	- [DONE] 下载主模型需要的dinov2模型。
 	- [DOOE] 准备主模型要求的代版本的numpy，实现两种版本的numpy并存。
-	- [TO-DO] 测试map anything的运行效果。
+	- [DONE] 测试map anything的运行效果。
+	- [DONE] 用map anything生成了colmap形式的点云。
+	- [TO-DO] 测试基于map anything生成的colmap点云再转换成3DGS的效果。
