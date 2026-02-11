@@ -85,4 +85,6 @@
 		- [DONE] 重置GPU上的debug tensor的layout，用来和cpu的debug排布对齐。
 			- [DONE] 确定tid, vid和rid, cid之间的映射关系。
 			- [DONE] 重新比较gpu计算结果和cpu的计算结果。
-- [DOING] 在CPU上实现导出Q\*K^T的最终计算结果。
+- [DONE] 在CPU上实现导出Q\*K^T的最终计算结果。
+- [DONE] 验证发现在GPU上最终计算得到的Q\*K^T出现了数值错误，数值特别大明显不正常。
+- [DOING] 解决GPU上Q\*K^T结果错误的问题。
