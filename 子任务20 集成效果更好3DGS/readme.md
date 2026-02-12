@@ -10,4 +10,5 @@
 	- [DOOE] 准备主模型要求的代版本的numpy，实现两种版本的numpy并存。
 	- [DONE] 测试map anything的运行效果。
 	- [DONE] 用map anything生成了colmap形式的点云。
+	- [DOING] 寻找语义分割模型，用于寻找地面点来把map anything生成的点云置正。
 	- [TO-DO] 测试基于map anything生成的colmap点云再转换成3DGS的效果。
