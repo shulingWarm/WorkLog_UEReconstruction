@@ -53,7 +53,7 @@
 	- [DONE] 根据m16n8k16的计算布局要求，将query从共享内存加载到寄存器。
 - [DONE] 准备用于存储mma计算的输出矩阵。
 - [DONE] 完成mma计算开发。
-- [DOING] 开发对QK^T结果的softmax操作。
+- [DONE] 开发对QK^T结果的softmax操作。
 	- [DONE] 准备增量式计算attention的数学公式。
 	- [DONE] 准备Q\*K^T当前的最大值维护。
 	- [DONE] 确认原版的flash-attention里面使用的也是蝴蝶寻址。
@@ -88,3 +88,4 @@
 - [DONE] 在CPU上实现导出Q\*K^T的最终计算结果。
 - [DONE] 验证发现在GPU上最终计算得到的Q\*K^T出现了数值错误，数值特别大明显不正常。
 - [DOING] 解决GPU上Q\*K^T结果错误的问题。
+	- [DOING] 验证GPU上第一个周期的读取数据内容上GPU和CPU是否一致。
