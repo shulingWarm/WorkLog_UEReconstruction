@@ -34,3 +34,13 @@
 			- [DONE] 实现CPU版本的Q\*K^T的结果。
 			- [DOING] 重排GPU上的结果，和标准的output排布对齐。
 - [DOING] 部署Map-Anything用于提高3DGS的重建质量。
+
+# 2026/2/15
+- [DOING] 加速Qwen-Image-Edit.
+	- [DOING] 手搓寄存器开销较小的flash-attention.
+		- [DOING] 验证Q\*K^T的计算结果
+			- [DONE] Q\*K^T的第一个周期和CPU的计算结果一致。
+			- [DOING] 验证发现最终循环后的计算结果和CPU不一致，需要debug.
+- [DOING] 部署Map-Anything用于提高3DGS的重建质量。
+	- [DONE] 在服务器上测试map-anything的重建效果，符合预期。
+	- [DOING] 在服务器上部署sam3用于重建结果置正。
