@@ -10,8 +10,10 @@
 	- [DOOE] 准备主模型要求的代版本的numpy，实现两种版本的numpy并存。
 	- [DONE] 测试map anything的运行效果。
 	- [DONE] 用map anything生成了colmap形式的点云。
-	- [DOING] 寻找语义分割模型，用于寻找地面点来把map anything生成的点云置正。
+	- [DONE] 寻找语义分割模型，用于寻找地面点来把map anything生成的点云置正。
 		- [DONE] 确认使用sam3模型。
 		- [DONE] 配置sam3的运行环境。
-		- [DOING] 运行sam3的demo。
+		- [DONE] 运行sam3的demo。
+		- 通过语义分割模型找到了有效的地面点。
+	- [TO-DO] 通过语义分割模型找到的地面点置正三维重建结果。
 	- [TO-DO] 测试基于map anything生成的colmap点云再转换成3DGS的效果。
