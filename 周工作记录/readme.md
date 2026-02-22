@@ -44,3 +44,13 @@
 - [DOING] 部署Map-Anything用于提高3DGS的重建质量。
 	- [DONE] 在服务器上测试map-anything的重建效果，符合预期。
 	- [DOING] 在服务器上部署sam3用于重建结果置正。
+
+# 2026/2/22
+- [DOING] 加速Qwen-Image-Edit.
+	- [DOING] 手搓寄存器开销较小的flash-attention.
+		- [DONE] 验证Q\*K^T的计算结果。Q\*K^T结果符合预期。
+		- [TO-DO] 验证softmax的计算结果。
+- [DOING] 部署Map-Anything用于提高3DGS的重建质量。
+	- [DONE] 在服务器上测试map-anything的重建效果，符合预期。
+	- [DONE] 在服务器上部署sam3用于重建结果置正。
+	- [DOING] 从sam3里面导出地面点，用于找到地面点在map-anything里面的空间点。
