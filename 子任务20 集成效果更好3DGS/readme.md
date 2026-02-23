@@ -18,5 +18,7 @@
 	- [DOING] 通过语义分割模型找到的地面点置正三维重建结果。
 		- [DONE] 准备专门用于语义分割的工程。
 		- [DOING] 从sam3的运行结果里面导出用于置正的关键点。
+			- [DONE] 导出sam3里面mask为true的关键点。
+			- [DOING] 导出map-anything里面从像素到空间点的映射关系。
 		- [TO-DO] 结合sam3的运行结果和map-anything的运行结果找到地面数据所在的空间点。
 	- [TO-DO] 测试基于map anything生成的colmap点云再转换成3DGS的效果。
