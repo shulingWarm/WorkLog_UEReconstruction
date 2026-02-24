@@ -96,4 +96,5 @@
 		- GPU上的结果第二个周期开始和CPU上不一样，原因是每一步的偏移步长写错了。
 	- [DONE] 再次验证目前的qkt结果是否一致。
 	- 目前第一组key周期的Q\*K^T结果都已经符合预期了。
-- [TO-DO] 验证softmax的结果。
+- [DOING] 验证softmax的结果。
+	- [DOING] 准备softmax的cpu中间结果导出函数。
