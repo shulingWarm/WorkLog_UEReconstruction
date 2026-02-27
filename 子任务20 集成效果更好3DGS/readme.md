@@ -21,5 +21,6 @@
 			- [DONE] 导出sam3里面mask为true的关键点。
 			- [DOING] 导出map-anything里面从像素到空间点的映射关系。
 				- [DOING] 处理map-anything的图片形状和sam3里面的图片形状不一致的问题。
+					- [DOING] 实现从torch tensor向PIL image转换的函数，用作SAM3的输入。
 		- [TO-DO] 结合sam3的运行结果和map-anything的运行结果找到地面数据所在的空间点。
 	- [TO-DO] 测试基于map anything生成的colmap点云再转换成3DGS的效果。
