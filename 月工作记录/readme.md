@@ -10,3 +10,13 @@
 		- [DONE] 实现将value从全局内存加载到共享内存。
 		- [DONE] 实现将value从共享内存加载到寄存器。
 		- [DOING] 验证Q\*K^T的计算结果是否与CPU上的计算结果一致。
+
+# 2月
+- [DOING] 加速Qwen-Image-Edit。
+	- [DOING] 手搓寄存器使用率较低的flash-attention.
+		- [DONE] 验证Q\*K^T的计算结果是否与CPU上的计算结果一致。
+		- [DOING] 验证softmax的计算结果是否与CPU上的结果一致。
+- [DOING] 部署map-anything用于提高3DGS生成的质量。
+	- [DONE] 在服务器上测试map-anything的生成质量，理论上可以不作BA直接使用。
+	- [DONE] 在服务器上部署sam3模型，用于识别地面像素从而置正地面点。
+	- [DOING] 由于map-anything会对输入图片进行裁剪，两个图片的像素点需要重新对齐。
