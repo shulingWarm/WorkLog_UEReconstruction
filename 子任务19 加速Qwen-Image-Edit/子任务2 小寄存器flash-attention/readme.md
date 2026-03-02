@@ -99,6 +99,8 @@
 - [DOING] 验证softmax的结果。
 	- [DONE] 准备softmax的cpu中间结果导出函数。
 	- [DONE] 用cpu算出softmax过程中每个query的key最大值。
-	- [DOING] 导出GPU里面的softmax的query最大值。
+	- [DONE] 导出GPU里面的softmax的query最大值。
 		- [DONE] 验证发现GPU里面的softmax最大值不符合预期，需要将输入数据类型改成bf16。
-		- [DOING] 将输入数据类型改成bf16重新测试。
+		- [DONE] 将输入数据类型改成bf16重新测试。
+		- GPU上和结果与CPU的softmax最大值一致。
+	- [DOING] 验证gpu的softmax的指数和是否和CPU一致。
