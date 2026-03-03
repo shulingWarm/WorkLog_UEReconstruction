@@ -22,6 +22,7 @@
 			- [DOING] 导出map-anything里面从像素到空间点的映射关系。
 				- [DONE] 处理map-anything的图片形状和sam3里面的图片形状不一致的问题。
 					- [DONE] 将map-anything生成的point点云的shape作为corp_resize的输入，来对齐sam3的图片大小。
-				- [DOING] 处理map-anything的3D点，根据sam3生成的mask将有效点取出。
+				- [DONE] 处理map-anything的3D点，根据sam3生成的mask将有效点取出。
+				- [TO-DO] 进一步导出从二维像素点到三维点的映射，现在取的只是mask出来的点。
 		- [TO-DO] 结合sam3的运行结果和map-anything的运行结果找到地面数据所在的空间点。
 	- [TO-DO] 测试基于map anything生成的colmap点云再转换成3DGS的效果。
