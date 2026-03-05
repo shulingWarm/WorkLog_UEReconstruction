@@ -103,4 +103,5 @@
 		- [DONE] 验证发现GPU里面的softmax最大值不符合预期，需要将输入数据类型改成bf16。
 		- [DONE] 将输入数据类型改成bf16重新测试。
 		- GPU上和结果与CPU的softmax最大值一致。
-	- [DOING] 验证gpu的softmax的指数和是否和CPU一致。
+	- [DONE] 验证gpu的softmax的指数和是否和CPU一致。
+	- [TO-DO] 最终验证gpu上的softmax的输出是否一致。
