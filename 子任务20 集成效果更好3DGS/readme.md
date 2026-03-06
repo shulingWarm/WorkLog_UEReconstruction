@@ -17,12 +17,13 @@
 		- 通过语义分割模型找到了有效的地面点。
 	- [DOING] 通过语义分割模型找到的地面点置正三维重建结果。
 		- [DONE] 准备专门用于语义分割的工程。
-		- [DOING] 从sam3的运行结果里面导出用于置正的关键点。
+		- [DONE] 从sam3的运行结果里面导出用于置正的关键点。
 			- [DONE] 导出sam3里面mask为true的关键点。
-			- [DOING] 导出map-anything里面从像素到空间点的映射关系。
+			- [DONE] 导出map-anything里面从像素到空间点的映射关系。
 				- [DONE] 处理map-anything的图片形状和sam3里面的图片形状不一致的问题。
 					- [DONE] 将map-anything生成的point点云的shape作为corp_resize的输入，来对齐sam3的图片大小。
 				- [DONE] 处理map-anything的3D点，根据sam3生成的mask将有效点取出。
-				- [TO-DO] 进一步导出从二维像素点到三维点的映射，现在取的只是mask出来的点。
+		- [DOING] 从找到的三维平面点里面拟合出三维空间的平面。
+		- [TO-DO] 根据三维空间的平面确定整个三维重建结果需要做的旋转平移变换。
 		- [TO-DO] 结合sam3的运行结果和map-anything的运行结果找到地面数据所在的空间点。
 	- [TO-DO] 测试基于map anything生成的colmap点云再转换成3DGS的效果。
