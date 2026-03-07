@@ -96,7 +96,7 @@
 		- GPU上的结果第二个周期开始和CPU上不一样，原因是每一步的偏移步长写错了。
 	- [DONE] 再次验证目前的qkt结果是否一致。
 	- 目前第一组key周期的Q\*K^T结果都已经符合预期了。
-- [DOING] 验证softmax的结果。
+- [DONE] 验证softmax的结果。
 	- [DONE] 准备softmax的cpu中间结果导出函数。
 	- [DONE] 用cpu算出softmax过程中每个query的key最大值。
 	- [DONE] 导出GPU里面的softmax的query最大值。
@@ -104,4 +104,5 @@
 		- [DONE] 将输入数据类型改成bf16重新测试。
 		- GPU上和结果与CPU的softmax最大值一致。
 	- [DONE] 验证gpu的softmax的指数和是否和CPU一致。
-	- [TO-DO] 最终验证gpu上的softmax的输出是否一致。
+	- [DONE] 最终验证gpu上的softmax的输出是否一致。
+- [DOING] 验证gpu上的attn_score\*V准备后的排布是否符合Tensor core的要求。
