@@ -54,3 +54,14 @@
 	- [DONE] 在服务器上测试map-anything的重建效果，符合预期。
 	- [DONE] 在服务器上部署sam3用于重建结果置正。
 	- [DOING] 从sam3里面导出地面点，用于找到地面点在map-anything里面的空间点。
+
+# 2026/3/8
+- [DOING] 加速Qwen-Image-Edit.
+	- [DOING] 手搓寄存器开销较小的flash-attention.
+		- [DONE] 验证softmax的计算结果。
+		- [DOING] 验证attn\*V的输入排布是否符合预期。
+- [DOING] 部署Map-Anything用于提高3DGS的重建质量。
+	- [DONE] 从sam3里面导出地面点，用于找到地面点在map-anything里面的空间点。
+	- [DONE] 根据找到的平面空间点拟合出空间中的平面。
+	- [DOING] 根据找到的平面方程计算出对空间的旋转矩阵。
+
