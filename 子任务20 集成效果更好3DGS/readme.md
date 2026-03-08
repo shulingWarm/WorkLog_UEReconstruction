@@ -23,7 +23,7 @@
 				- [DONE] 处理map-anything的图片形状和sam3里面的图片形状不一致的问题。
 					- [DONE] 将map-anything生成的point点云的shape作为corp_resize的输入，来对齐sam3的图片大小。
 				- [DONE] 处理map-anything的3D点，根据sam3生成的mask将有效点取出。
-		- [DOING] 从找到的三维平面点里面拟合出三维空间的平面。
-		- [TO-DO] 根据三维空间的平面确定整个三维重建结果需要做的旋转平移变换。
+		- [DONE] 从找到的三维平面点里面拟合出三维空间的平面。
+		- [DOING] 根据拟合出的三维空间平面方程确定将其变换到平面的RT。
 		- [TO-DO] 结合sam3的运行结果和map-anything的运行结果找到地面数据所在的空间点。
 	- [TO-DO] 测试基于map anything生成的colmap点云再转换成3DGS的效果。
