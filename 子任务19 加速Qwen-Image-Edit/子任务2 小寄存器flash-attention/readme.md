@@ -106,3 +106,5 @@
 	- [DONE] 验证gpu的softmax的指数和是否和CPU一致。
 	- [DONE] 最终验证gpu上的softmax的输出是否一致。
 - [DOING] 验证gpu上的attn_score\*V准备后的排布是否符合Tensor core的要求。
+	- [DONE] GPU上的attention score是符合要求的。
+	- [DOING] 验证发现GPU中的value值不符合nvidia的排布要求。
