@@ -25,6 +25,7 @@
 				- [DONE] 处理map-anything的3D点，根据sam3生成的mask将有效点取出。
 		- [DONE] 从找到的三维平面点里面拟合出三维空间的平面。
 		- [DONE] 根据拟合出的三维空间平面方程确定将其变换到平面的RT。
-		- [TO-DO] 开发函数用于给map-anything的重建结果施加RT。
-		- [TO-DO] 结合sam3的运行结果和map-anything的运行结果找到地面数据所在的空间点。
+		- [DONE] 开发函数用于给map-anything的重建结果施加RT。
+		- [DONE] 开发对map-anything的结果施加旋转矩阵的函数。
+		- [DOING] 开发将map-anything的结果保存成colmap格式的函数。
 	- [TO-DO] 测试基于map anything生成的colmap点云再转换成3DGS的效果。
