@@ -107,4 +107,6 @@
 	- [DONE] 最终验证gpu上的softmax的输出是否一致。
 - [DOING] 验证gpu上的attn_score\*V准备后的排布是否符合Tensor core的要求。
 	- [DONE] GPU上的attention score是符合要求的。
-	- [DOING] 验证发现GPU中的value值不符合nvidia的排布要求。
+	- [DONE] 验证发现GPU中的value值不符合nvidia的排布要求。
+	- [DONE] 验证发现GPU上访问的线程id和valid id符合预期，主要是__shuf_sync的表现不符合预期。
+	- [TO-DO] 研究对于__shuf_sync是否有误判。
