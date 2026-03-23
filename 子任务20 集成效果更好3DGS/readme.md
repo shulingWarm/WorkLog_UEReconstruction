@@ -15,7 +15,7 @@
 		- [DONE] 配置sam3的运行环境。
 		- [DONE] 运行sam3的demo。
 		- 通过语义分割模型找到了有效的地面点。
-	- [DOING] 通过语义分割模型找到的地面点置正三维重建结果。
+	- [DONE] 通过语义分割模型找到的地面点置正三维重建结果。
 		- [DONE] 准备专门用于语义分割的工程。
 		- [DONE] 从sam3的运行结果里面导出用于置正的关键点。
 			- [DONE] 导出sam3里面mask为true的关键点。
@@ -27,5 +27,8 @@
 		- [DONE] 根据拟合出的三维空间平面方程确定将其变换到平面的RT。
 		- [DONE] 开发函数用于给map-anything的重建结果施加RT。
 		- [DONE] 开发对map-anything的结果施加旋转矩阵的函数。
-		- [DOING] 开发将map-anything的结果保存成colmap格式的函数。
-	- [TO-DO] 测试基于map anything生成的colmap点云再转换成3DGS的效果。
+		- [DONE] 开发将map-anything的结果保存成colmap格式的函数。
+	- [DONE] 测试基于map anything生成的colmap点云再转换成3DGS的效果。
+		- 整体上效果不如vggt好。
+	- [DOING] 将基于map-anything先重建再置正的场景导入到虚幻引擎测试。
+		- 导入后发现坐标轴与map-anything里面的坐标轴不一致，应该让YOZ平面与地面平行。
