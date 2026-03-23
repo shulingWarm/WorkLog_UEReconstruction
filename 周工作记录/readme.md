@@ -65,3 +65,14 @@
 	- [DONE] 根据找到的平面空间点拟合出空间中的平面。
 	- [DOING] 根据找到的平面方程计算出对空间的旋转矩阵。
 
+# 2026/3/23
+- [DOING] 加速Qwen-Image-Edit
+	- [DOING] 手搓寄存器开销较小的flash-attention.
+		- [DOING] 验证attn\*V的输入排布是否符合预期。
+			- attention score的排布符合预期，但value的排布由于shuf_sync导致了不符合预期。
+- [DOING] 部署Map-Anything用于提高3DGS的重建质量。
+	- [DONE] 根据找到的平面方程计算出对空间的旋转矩阵。
+	- [DONE] 将旋转矩阵施加在map-anything的结果上。
+	- [DONE] 把旋转后的map-anything的结果导出到colmap。
+	- [DONE] 打通map-anything的结果到3DGS的pipeline。
+	- [DOING] 解决map-anything的结果导入到虚幻引擎后坐标轴XZ互换的问题。
