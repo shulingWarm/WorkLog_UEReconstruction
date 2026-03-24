@@ -109,4 +109,6 @@
 	- [DONE] GPU上的attention score是符合要求的。
 	- [DONE] 验证发现GPU中的value值不符合nvidia的排布要求。
 	- [DONE] 验证发现GPU上访问的线程id和valid id符合预期，主要是__shuf_sync的表现不符合预期。
-	- [TO-DO] 研究对于__shuf_sync是否有误判。
+	- [DONE] 研究对于__shuf_sync是否有误判。
+		- [DONE] 发现shuf_sync只能用来读写32位的数据，读取16位的数据时会取错。
+	- [DOING] 解决调用shuf_sync之前数据就有错误的问题，value的排布不符合预期。
